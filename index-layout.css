@@ -53,3 +53,69 @@ nav a:hover{
     color: #c78c19;
     text-decoration: underline;
 }
+
+
+
+
+
+
+/*Contactanos estructura*/
+
+form label,form legend{
+    display:block;
+}
+
+.enviar{
+    display:block;
+    width: 15%;
+    margin-left: 80%;
+    margin: 0.04em  0 1em 80%;
+    padding: 0.08em ;
+    font-size:1em;
+    font-weight: bold;
+    background:#1E73BE;
+    color:#fefefefe;
+    border:none;
+    cursor:pointer;
+    text-align: center;
+    transition: 1s all;
+}
+
+.enviar:hover{
+    background:darkblue;
+    transform: scale(1.10);
+    transition: 1s all;
+    border-radius: 5px;
+}
+
+/*FIN Contactanos estructura */
+
+/*footer CSS*/
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    display:block;
+    background: #1E73BE;
+    padding-top: 50px;
+}
+
+.logo_fisios_foot{
+    padding: 10px;
+    height: 2.5em;
+}
+
+footer a{
+    color:white;
+}
+
+.logo_SS{
+    height: 1.5em;
+    padding: 10px;
+}
+
+/* FIN footer CSS*/
+
+
+
