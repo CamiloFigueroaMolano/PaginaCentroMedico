@@ -3,18 +3,16 @@
     src: url(fonts/Montserrat/Montserrat.ttf);
 }
 
-body{
-    margin: 0;
+.caja{
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+    
 }
 
 nav{
     position: relative;
-    top: 0PX;
-    right: 0;
-    margin-bottom: 0px;
-    background-color: #1E73BE;
-    padding-bottom: 30px;
-    padding-top: 10px;
+    background: #1E73BE;
     
 }
 
@@ -23,227 +21,35 @@ nav li{
     margin: 0 0 0 15px;
     
     
+      
 }
-
-.imgnav{
-    width: 40px;
-    margin-right: 0.5%;
-    position: relative;
-    top: 9px;
-    
-} 
-.navletra{
-    display: inline;
-    text-align: center;
-   
+.navitem1{
+    width: 0.5;
 }
 
 nav a{
     text-transform:initial;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     font-family: monserrat;
     text-decoration: none;
-    padding: 10px;
+    display:inline-flex;  
+    margin-top: 5px;
+    margin-left: 3em;
+    padding-top: 2px;
+}
+.textop{
+    align-self: center;
+    width: 150px;
+    text-align: center;
+}
+
+.imgnav{
+    width: 40px;
+    margin-right: 20px;
 }
 
 nav a:hover{
-    color: #23A6F0;
+    color: #c78c19;
+    text-decoration: underline;
 }
-
-.containerPrincipal{
-    margin-top: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
-    height: 100vh;
-}
-
-.left{
-    background: white;
-}
-
-.right{
-    text-align: center;
-    margin-top: 40px;
-    
-}
-
-.productos{
-    top: 30px;
-    width: 100%;
-    margin-top: 40px;
-    margin-left: 100px;
-    padding: 0px;
-}
-
-.productos li{
-    display: inline-block;
-    text-align: left;
-    width: 80%;
-    vertical-align: top;
-    margin: 0%;
-    padding: 60px 20px;
-}
-
-.titulo1{
-    font-size: 40px;
-    font-weight: bold;
-    font-family:monserrat;
-    padding: 11px;
-    color: #1E73BE;
-}
-.parrafo1{
-    font-size: 36px; 
-    font-family:monserrat;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    color: #1E73BE;
-   
-}
-.parrafo2{
-    font-size: 18px; 
-    font-family:monserrat;
-    padding: 10px;
-    color: #777E84;
-}
-
-.btn-enviar{
-
-    width: 30%;
-    padding: 8px;
-    margin-right: 10px;
-    margin-left: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background: #23A6F0;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-.btn-enviar:hover{
-    background: white;
-    color: #23A6F0;
-    border: 1px solid #23A6F0;
-}
-
-.recepcion1{
-    width: 500px;
-    height: 500px;
-    padding: 50;
-    border-top-left-radius: 60px;
-    border-bottom-left-radius:60px;
-    
-}
-
-.containerQuienesSomos{
-    margin-top: 0px;
-    height: 100vh;
-    
-}
-
-.cuadrado1 {
-    position: absolute;
-    width: 450px;
-    height: 550px;
-    left: -27px;
-    top: 750px;
-    background: #1E73BE;
-  }
-
-.cuadrado2{
-    position: absolute;
-    width: 200px;
-    height: 550px;
-    left: 1080px;
-    top: 750px;
-
-background: #1E73BE;
-}
-
-.quien{
-    position: absolute;
-    width: 200px;
-    height: 176px;
-    left: 50px;
-    top: 220px;
-    font-family: monserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 55px;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.cuadrado3{
-    position: absolute;
-    width: 230px;
-    height: 6px;
-    left: 23px;
-    top: 1112px;
-    background: #8DD6FF;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.info1{
-    position: absolute;
-    width: 300px;
-    height: 430px;
-    left: 260px;
-    top: 825px;
-    background: #D9D9D9;
-    border-radius: 40px;
-}
-
-.info2{
-    position: absolute;
-    width: 300px;
-    height: 430px;
-    left: 580px;
-    top: 825px;
-    background: #D9D9D9;
-    border-radius: 40px;
-}
-
-.info3{
-    position: absolute;
-    width: 300px;
-    height: 430px;
-    left: 900px;
-    top: 825px;
-    background: #D9D9D9;
-    border-radius: 40px;
-}
-
-.tituloinfobox{
-    align-items: center;
-    text-align: center;
-    font-family: monserrat;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 21px;
-    margin-top: 100px;
-    color: #1E73BE;
-}
-
-.parrafoinfobox{
-    text-align: center;
-    margin-top: 30px;
-    position: absolute;
-    width: 250px;
-    height: 410px;
-    font-family: monserrat;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 21px;
-    color: #777E84;
-    margin-left: 25px;
-
-}
-
