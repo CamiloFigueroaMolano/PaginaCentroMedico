@@ -54,6 +54,71 @@ nav a:hover{
     text-decoration: underline;
 }
 
+/* ----información servicios ------ */
+
+.info-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    gap: 20px;
+}
+
+.informacion-img {
+    width: 280px;
+    height: 315px;
+    background-color: #65C22C;
+    position: relative;
+}
+
+.informacion-img > img {
+    width: 410px;
+    height: 290px;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    border-radius: 30px;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-servicios2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.informacion-img2 {
+    width: 280px;
+    height: 315px;
+    background-color: #65C22C;
+    position: relative;
+}
+
+.informacion-img2 > img {
+    width: 410px;
+    height: 290px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    border-radius: 30px;
+}
+
+.info-servicios-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.servicios-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Contactanos estructura*/
 
 form label,form legend{
