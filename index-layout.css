@@ -63,17 +63,33 @@ nav a:hover{
     text-align: end;
     justify-items: end;
     gap: 10px;
+    grid-template-areas:    "informacion1 imagen1"
+                            "imagen2 informacion2"
+                            "informacion-logo1 informacion-logo2"
+                            "informacion3 imagen3";
 }
 
-.informacion-img {
-    width: 280px;
+.informacion-img1 {
+    /* width: 280px; */
+    width: 50%;
     height: 315px;
     background-color: #65C22C;
     position: relative;
+    grid-area: imagen1;
+}
+.informacion-img3 {
+    /* width: 280px; */
+    width: 50%;
+    height: 315px;
+    background-color: #65C22C;
+    position: relative;
+    grid-area: imagen3;
 }
 
-.informacion-img > img {
-    width: 410px;
+.informacion-img1 > img,
+.informacion-img3 > img {
+    /* width: 410px; */
+    width: 100%;
     height: 290px;
     position: absolute;
     right: 100px;
@@ -81,45 +97,78 @@ nav a:hover{
     border-radius: 30px;
 }
 
-.informacion {
+.informacion1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: justify;
     font-family: monserrat;
+    grid-area: informacion1;
+    padding: 1.5rem;
+}
+.informacion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+    font-family: monserrat;
+    grid-area: informacion2;
+    padding: 1.5rem;
+}
+.informacion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+    font-family: monserrat;
+    grid-area: informacion3;
+    padding: 1.5rem;
 }
 
-.informacion > p {
+.informacion1 > p,
+.informacion2 > p,
+.informacion3 > p {
     font-weight: 600;
     font-size: 18px;
     color: #777E84;
 }
 
-.informacion > h2 {
+.informacion1 > h2,
+.informacion2 > h2,
+.informacion3 > h2 {
     font-weight: 400;
     font-size: 42px;
     color: #1E73BE;
 }
 
-.informacion span {
+.informacion1 span,
+.informacion2 span,
+.informacion3 span {
     font-weight: bold;
 }
 
-.informacion .linea-verde, 
-.informacion > span {
+.informacion1 .linea-verde, 
+.informacion1 > span,
+.informacion2 .linea-verde, 
+.informacion2 > span
+.informacion3 .linea-verde, 
+.informacion3 > span {
     display: inline-block;
 }
 
 .informacion-img2 {
-    width: 280px;
+    /* width: 280px; */
+    width: 50%;
     height: 315px;
     background-color: #65C22C;
     position: relative;
     justify-self: start;
+    grid-area: imagen2;
 }
 
 .informacion-img2 > img {
-    width: 410px;
+    /* width: 410px; */
+    width: 100%;
     height: 290px;
     position: absolute;
     left: 100px;
@@ -127,21 +176,33 @@ nav a:hover{
     border-radius: 30px;
 }
 
-.servicios-logo {
+.servicios-logo1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
     font-family: monserrat;
+    grid-area: informacion-logo1;
 }
 
-.servicios-logo > h2 {
+.servicios-logo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-family: monserrat;
+    grid-area: informacion-logo2;
+}
+
+.servicios-logo1 > h2,
+.servicios-logo2 > h2 {
     font-weight: 600;
     font-size: 32px;
     color: #1E73BE;
 }
 
-.servicios-logo > p {
+.servicios-logo1 > p,
+.servicios-logo2 > p {
     font-weight: 600;
     font-size: 18px;
     color: #777E84;
@@ -217,3 +278,23 @@ footer a{
 }
 
 /* FIN footer CSS*/
+
+
+/* media-querie */
+@media screen and (max-width: 768px) {
+    .contenedor-info-servicios {grid-template-areas:    
+                                "imagen1 imagen1"
+                                "informacion1 informacion1"
+                                "imagen2 imagen2"
+                                "informacion2 informacion2"
+                                "informacion-logo1 informacion-logo1"
+                                "informacion-logo2 informacion-logo2"
+                                "imagen3 imagen3"
+                                "informacion3 informacion3 ";
+    }
+    .informacion-img1,
+    .informacion-img2,
+    .informacion-img3 {
+        width: 70%;
+    }
+}
