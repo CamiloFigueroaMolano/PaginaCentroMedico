@@ -13,6 +13,7 @@
 nav{
     position: relative;
     background: #1E73BE;
+    padding: 10px;
     
 }
 
@@ -53,6 +54,153 @@ nav a:hover{
     color: #c78c19;
     text-decoration: underline;
 }
+/*container 1*/
+
+.container {
+    display: flex;
+    align-items: center; /* Centra los elementos en el eje vertical */
+    justify-content: center; /* Centra los elementos en el eje horizontal */
+    margin-top: 2%;
+  }
+  
+  .text-section {
+    flex: 1;
+    text-align:left; /* Centra el contenido de texto dentro de su sección */
+    margin-left: 10%;
+    margin-top: 2%;
+    letter-spacing: 0.5px;
+  }
+
+  .titulo1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:monserrat;
+    padding: 11px;
+    color: #1E73BE;
+}
+.parrafo1{
+    font-size: 36px; 
+    font-family:monserrat;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: #1E73BE;
+    line-height: 1.5;
+   
+}
+.parrafo2{
+    font-size: 18px; 
+    font-family:monserrat;
+    padding: 10px;
+    color: #777E84;
+    line-height: 1.5;
+}
+  
+  .image-section {
+    flex: 1;
+    margin-top: 60px;
+    text-align: center; /* Centra la imagen dentro de su sección */
+  }
+  
+  .recep1 {
+    border-radius: 50%;
+    max-width: 70%;
+    min-height: 300px;
+    max-height: auto;
+    display: inline-flex; /* Esto hace que la imagen se centre en su contenedor */
+    margin: 0 auto; /* Esto centra la imagen horizontalmente */
+  }
+
+  .buttons-section1 button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #23A6F0;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.buttons-section1 button:hover{
+    background: white;
+    color: #23A6F0;
+    border: 1px solid #23A6F0;
+}
+  
+
+/* tarjetas de informacion */
+  
+.card-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    position:relative;
+    z-index: 2;
+    top:70px;
+    left: 10px;
+    width: auto;
+    min-width: 10%;
+    max-height: 450px;
+    height: auto;
+    background: #D9D9D9;    
+    border-radius: 40px;
+    margin: 10px ;
+    padding: 1%;
+    padding-bottom: 70px;
+}
+
+.card-title{
+    align-items: center;
+    text-align: center;
+    font-family: monserrat;
+    font-weight: bold;
+    font-size: larger;
+    line-height: 21px;
+    margin-top: 60px;
+    color: #1E73BE;
+}
+
+.card-content{
+    text-align: center;
+    overflow: auto;
+    text-overflow: ellipsis;
+    margin-top: 30px;
+    max-width: 230px;
+    height: 250px;
+    font-family: monserrat;
+    font-weight:auto;
+    font-size:medium;
+    line-height: 21px;
+    color: #777E84;
+}
+
+.square1 {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    min-width: 40%;
+    min-height: 700px;
+    background: #1E73BE;
+}
+
+.square2 {
+   
+    position: absolute;
+    right: 0 ;
+    z-index: 1;
+    min-width: 10%;
+    min-height: 700px;
+    background: #1E73BE;
+}
+  
 
 /*Contactanos estructura*/
 
@@ -111,3 +259,21 @@ footer a{
 }
 
 /* FIN footer CSS*/
+
+@media screen and (max-width:480px){
+    
+    .card {
+        position:relative;
+        z-index: 2;
+        top:70px;
+        left: 0px;
+        width: auto;
+        max-height: 450px;
+        height: auto;
+        background: #D9D9D9;    
+        border-radius: 40px;
+        margin: 10px ;
+        padding: 3%;
+        padding-bottom: 109px;
+    }
+}
