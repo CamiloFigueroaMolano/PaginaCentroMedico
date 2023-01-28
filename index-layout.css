@@ -3,6 +3,7 @@
     src: url(fonts/Montserrat/Montserrat.ttf);
 }
 
+/* CSS Navbar!*/
 .caja{
     width: auto;
     position: relative;
@@ -18,7 +19,7 @@ nav{
 
 nav li{
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 0.95rem;
     
     
       
@@ -30,34 +31,117 @@ nav li{
 nav a{
     text-transform:initial;
     color: white;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-family: monserrat;
     text-decoration: none;
     display:inline-flex;  
-    margin-top: 5px;
+    margin-top: 0.3rem;
     margin-left: 3em;
-    padding-top: 2px;
+    padding-top: 0.13rem;
 }
 .textop{
     align-self: center;
-    width: 150px;
+    width: 9.5rem;
     text-align: center;
 }
 
 .imgnav{
-    width: 40px;
-    margin-right: 20px;
+    width: 2.53rem;
+    margin-right: 1.3rem;
 }
 
 nav a:hover{
     color: #c78c19;
     text-decoration: underline;
+
 }
+
+/*maricaditas varias */
+
+#volante:hover{
+    transform: rotate(180deg);
+    transition: 400ms;
+}
+
+#lupa:hover{
+    transform:scale(1.2);
+    transition: 400ms;
+}
+
+#maletin:hover{
+    transform:scale(1.2);
+    filter: opacity(0.5) ;
+    transition: 400ms;
+}
+
+#pistola:hover{
+    transform:rotate(-10deg) translateX(-1rem);
+    transition: 400ms;
+}
+
+/*FIN maricaditas varias */
+
+/* FIN CSS Navbar!*/
+
+
+
+
+/* CSS imagenes valoraciones */
+
+.cuadro_gris{
+    position: absolute;
+    width: 100%;
+    height:8rem;
+    background: rgba(128, 128, 128, 0.486);
+    margin: 12rem 0;
+}
+
+.valoraciones li{
+    display: inline-block; /*se alinea la liste de forma horizontal */
+    text-align: center; /* texto al centro*/
+    width: 20%;
+    vertical-align: top;  
+    margin: 0 1.5%;
+    padding: 3rem 0.08rem;
+    border-radius: 1rem;
+}
+
+
+
+.img_validaciones1{
+    margin-right: 2em;
+    height: 100%;
+    width:100%;
+    box-sizing: border-box;
+    background: green;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.img_validaciones2{
+    height: 100%;
+    width:100%;
+    box-sizing: border-box;
+    border-width: 1rem 0.5rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: blue;
+}
+
+
+/* FIN CSS imagenes valoraciones */
+
+
 
 /*Contactanos estructura*/
 
 form label,form legend{
+    
     display:block;
+}
+
+.input1{
+    padding-top: 10rem;
 }
 
 .enviar{
@@ -80,7 +164,7 @@ form label,form legend{
     background:darkblue;
     transform: scale(1.10);
     transition: 1s all;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 
 /*FIN Contactanos estructura */

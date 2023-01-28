@@ -12,10 +12,10 @@
     <header>
         <nav>
             <ul>
-                <li class="navitem1"><a href="#"> <img class="imgnav" src="img/volante.png"><p class="textop">Examenes para licencia de conducir</p></a></li>
-                <li><a  href="#"> <img class="imgnav" src="img/lupa.png"><p class="textop"> Seguridad vial</p> </a></li>
-                <li><a  href="#"> <img class="imgnav" src="img/maletin.png"><p class="textop"> Salud y seguridad en el trabajo</p> </a></li>
-                <li><a  href="#"> <img class="imgnav" src="img/pistola.png"><p class="textop">Examenes para porte de armas</p> </a></li>
+                <li class="navitem1"><a href="#"> <img class="imgnav" id='volante' src="img/volante.png"><p class="textop">Examenes para licencia de conducir</p></a></li>
+                <li><a  href="#"> <img class="imgnav" id='lupa' src="img/lupa.png"><p class="textop"> Seguridad vial</p> </a></li>
+                <li><a  href="#"> <img class="imgnav" id='maletin' src="img/maletin.png"><p class="textop"> Salud y seguridad en el trabajo</p> </a></li>
+                <li><a  href="#"> <img class="imgnav" id='pistola' src="img/pistola.png"><p class="textop">Examenes para porte de armas</p> </a></li>
             </ul>     
         </nav>
     </header>
@@ -97,28 +97,60 @@
             <h2>Seguridad Privada</h2>
             <p>Realizamos evaluaciones de la aptitud psicofísica, mental y de coordinación motriz para el porte y/o tenencia de armas de fuego para seguridad privada, para así certificar y dar cumplimiento a la ley 1539 de 2012, decreto 2368 del 22 de Noviembre de 2012.</p>
         </div>
+
+        <div class="cuadro_gris"></div>
+
+        <ul class="valoraciones">
+            <li>
+                <img id="psicomotriz"class="img_validaciones1" src="/img/validaciones/evaluacion_psicomotriz.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Psicomotriz</h3>
+            </li>
+            <li>
+                <img id="auditiva" class="img_validaciones2" src="/img/validaciones/evalaucion_auditiva.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Auditiva</h3>
+            </li>
+            <li>
+                <img id="visual" class="img_validaciones1" src="/img/validaciones/evaluacion_visual.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Visual</h3>
+            </li>
+            <li>
+                <img id="medica" class="img_validaciones2" src="/img/validaciones/evaluacion_medica.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Médica</h3>
+            </li>
+        </ul>
+      
     </section>
 
+    <div class="clearfix"></div>
+    
     <section class="info-servicios">
         <h2>Valoraciones <span>Individuales</span></h2>
         <div class="linea-verde"></div>
         <p>Ofrecemos servicios especializados de valoraciones individuales para las personas que requieren realizar una valoración médica, valoración psicológica, valoración de fonoaudiología y visiometrias. Así prevenir y detectar cualquier anomalía en su salud.</p>
         <img src="./img/foto/valoraciones-individuales.png" alt="valoraciones-individuales">
         <div class="cuadro-verde"></div>
+        
+        <div class="cuadro_gris"></div>
+        
+        <ul class="valoraciones">
+            <li>
+                <img id="primeritem" class="img_validaciones1" src="/img/validaciones/evaluacion_psicomotriz.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Psicomotriz</h3>
+            </li>
+            <li>
+                <img class="img_validaciones2" src="/img/validaciones/evalaucion_auditiva.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Auditiva</h3>
+            </li>
+            <li>
+                <img class="img_validaciones1" src="/img/validaciones/evaluacion_visual.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Visual</h3>
+            </li>
+            <li>
+                <img class="img_validaciones2" src="/img/validaciones/evaluacion_medica.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Médica</h3>
+            </li>
+        </ul>
 
-        <div class="valoraciones">
-            <img class="img_validaciones" src="/img/validaciones/evaluacion_psicomotriz.png" alt="imagen validación psicomotriz">
-            <h3 class="titulos_validaciones">Evaluación Psicomotriz</h3>
-
-            <img class="img_validaciones" src="/img/validaciones/evalaucion_auditiva.png" alt="imagen validación psicomotriz">
-            <h3 class="titulos_validaciones">Evaluación Auditiva</h3>
-            
-            <img class="img_validaciones" src="/img/validaciones/evaluacion_visual.png" alt="imagen validación psicomotriz">
-            <h3 class="titulos_validaciones">Evaluación Visual</h3>
-            
-            <img class="img_validaciones" src="/img/validaciones/evaluacion_medica.png" alt="imagen validación psicomotriz">
-            <h3 class="titulos_validaciones">Evaluación Médica</h3>
-        </div>
     </section>
 
     <section class="contactenos">
@@ -128,7 +160,7 @@
         
         <div class="cuadro_contacto"></div>
 
-        <div class="info de ocntacto">
+        <div class="infodecontacto">
             <p> AK 45 No 106 - 45 </p>
             <p> Oficina 102 y 301 </p>
             <p> Autopista Norte costado Occidental </p>
@@ -140,19 +172,20 @@
         <div class="form_box"></div>
         
         <form>
-            <label for="nombre">Nombre:</label>
+            <label class="input1" for="nombre">Nombre:</label>
             <input type="text" id="nombre" class="input" required>
-
+    
             <label for="correo">Correo:</label>
             <input type="email" id="correo" class="input" required placeholder="email@dominio.com">
-
+    
             <label for="mensaje">Mensaje</label>
             <textarea cols="23" rows="10" id="mensaje" class="input" required></textarea>
-
+    
             <input type="submit" value="Enviar" class="enviar">
         </form>
-    
+        
     </section>
+    <div class="clearfix"></div>
     <footer>
         <img class="logo_fisios_foot" src="/img/logo.png" alt="Logo fisios Pie de pagina">
         <p> Rendición de cuentas </p><br>
