@@ -286,7 +286,7 @@ nav a:hover{
 
 .informacion1 > h2,
 .informacion2 > h2,
-.informacion3 > h2 {
+.informacion3 > h2{
     font-weight: 400;
     font-size: 42px;
     color: #1E73BE;
@@ -303,7 +303,7 @@ nav a:hover{
 .informacion2 .linea-verde, 
 .informacion2 > span
 .informacion3 .linea-verde, 
-.informacion3 > span {
+.informacion3 > span{
     display: inline-block;
 }
 
@@ -404,6 +404,10 @@ nav a:hover{
 
 /* CSS imagenes valoraciones */
 
+.info-servicios{
+    width: 100%;
+    margin-bottom: 600px;
+}
 .cuadro_gris{
     position: absolute;
     width: 100%;
@@ -413,35 +417,62 @@ nav a:hover{
 }
 
 .valoraciones li{
+    position: absolute;
     display: inline-block; /*se alinea la liste de forma horizontal */
     text-align: center; /* texto al centro*/
-    width: 20%;
+    width: 15%;
     vertical-align: top;  
-    margin: 0 1.5%;
-    padding: 3rem 0.08rem;
+    margin: 0 1.0%;
+    padding: 0rem 0.08rem;
     border-radius: 1rem;
 }
 
-
-
 .img_validaciones1{
-    margin-right: 2em;
-    height: 100%;
-    width:100%;
     box-sizing: border-box;
     background: green;
     padding: 1rem 0.5rem;
     border-radius: 1rem;
+    scale:0.80;
 }
 
 .img_validaciones2{
-    height: 100%;
-    width:100%;
     box-sizing: border-box;
-    border-width: 1rem 0.5rem;
-    border-style: solid;
+    background: blue;
+    padding: 1rem 0.5rem;
     border-radius: 1rem;
-    border-color: blue;
+    scale:0.80;
+    
+}
+
+#item4{
+    margin-left:75%;
+    text-align: center;
+}
+
+#item3{
+    margin-left:52%;
+    text-align: center;
+}
+
+#item2{
+    margin-left:28%;
+    text-align: center;
+}
+
+#item1{
+    margin-left:6%;
+    text-align: center;
+}
+
+
+.titulos_validaciones{
+    margin-left: 30%;
+    margin-top: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family:monserrat;
+    text-align:center;
+    color:rgb(32, 78, 230)
 }
 
 
@@ -450,23 +481,70 @@ nav a:hover{
 
 
 /*Contactanos estructura*/
+.contact{
+    font-weight: bold;
+    font-size:2.02rem;
+    font-family: monserrat;
+    color:#1E73BE
+}
+
+.linea-verde1{
+    width: 300px;
+    height: 10px;    
+    background: #65C22C;
+}
+
+.infodecontacto{
+    float:left;
+    width:50%;
+    text-align:center;
+    line-height:2.5rem;
+    box-sizing:border-box;
+    margin-right: 3%;
+    border-right-color:#1E73BE;
+    border-width: 0.3rem;
+    border-right-style: solid;
+}
+
+.infodecontacto p{
+    margin-top: 1%;
+    padding-top: 1%;
+    font-family: monserrat;
+    font-weight: bold;
+}
+
+.form_box{
+    float:left;
+    width:50%;
+    
+}
+
+
 
 form label,form legend{
-    
     display:block;
+    font-size: 1.26rem;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color:#23A6F0;
+    margin: 10px;
 }
 
-.input1{
-    padding-top: 10rem;
+#correo,#nombre,#mensaje{
+    margin-left: 5%;
+    padding-right: 25%;
+    padding-bottom: 0.5%;
+    background: rgb(206, 201, 201);
+    border: none;
 }
+
 
 .enviar{
-    display:block;
-    width: 15%;
-    margin-left: 80%;
-    margin: 0.04em  0 1em 80%;
-    padding: 0.08em ;
-    font-size:1em;
+    
+    width: 10%;
+    margin: 0.04em  0 1em 85%;
+    padding: 0 ;
+    font-size:1.2rem;
     font-weight: bold;
     background:#1E73BE;
     color:#fefefefe;
@@ -536,11 +614,18 @@ footer a{
                                 "informacion-logo1 informacion-logo1"
                                 "informacion-logo2 informacion-logo2"
                                 "imagen3 imagen3"
-                                "informacion3 informacion3 ";
+                                "informacion3 informacion3 "
+                                "info-servicios info-servicios"
+                                "contactenos contactenos";
     }
     .informacion-img1,
     .informacion-img2,
     .informacion-img3 {
         width: 70%;
+    }
+
+    
+    .cuadro_gris,#item4,#item3,#item2,#item1,.valoraciones li{
+        scale:0.5;
     }
 }
