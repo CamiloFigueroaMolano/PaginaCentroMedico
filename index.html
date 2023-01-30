@@ -12,10 +12,10 @@
     <header>
         <nav>
             <ul>
-                <li class="navitem1"><a href="#"> <img class="imgnav" src="img/volante.png"><p class="textop">Examenes para licencia de conducir</p></a></li>
-                <li><a  href="#"> <img class="imgnav" src="img/lupa.png"><p class="textop"> Seguridad vial</p> </a></li>
-                <li><a  href="#"> <img class="imgnav" src="img/maletin.png"><p class="textop"> Salud y seguridad en el trabajo</p> </a></li>
-                <li><a  href="#"> <img class="imgnav" src="img/pistola.png"><p class="textop">Examenes para porte de armas</p> </a></li>
+                <li class="navitem1"><a href="#"> <img class="imgnav" id='volante' src="img/volante.png"><p class="textop">Examenes para licencia de conducir</p></a></li>
+                <li><a  href="#"> <img class="imgnav" id='lupa' src="img/lupa.png"><p class="textop"> Seguridad vial</p> </a></li>
+                <li><a  href="#"> <img class="imgnav" id='maletin' src="img/maletin.png"><p class="textop"> Salud y seguridad en el trabajo</p> </a></li>
+                <li><a  href="#"> <img class="imgnav" id='pistola' src="img/pistola.png"><p class="textop">Examenes para porte de armas</p> </a></li>
             </ul>     
         </nav>
     </header>
@@ -82,8 +82,34 @@
             <h2>Seguridad Privada</h2>
             <p>Realizamos evaluaciones de la aptitud psicofísica, mental y de coordinación motriz para el porte y/o tenencia de armas de fuego para seguridad privada, para así certificar y dar cumplimiento a la ley 1539 de 2012, decreto 2368 del 22 de Noviembre de 2012.</p>
         </section>
+        
+     <!--   <section class="info-servicios">
 
-
+            <div class="cuadro-verde"></div>
+            
+            <div class="cuadro_gris"></div>
+            
+            <ul class="valoraciones">
+                <li id="item5">
+                    <img class="img_validaciones1" src="/img/validaciones/evaluacion_psicomotriz.png" alt="imagen validación psicomotriz">
+                    <h3 class="titulos_validaciones">Evaluación Psicomotriz</h3>
+                </li>
+                <li id="item6">
+                    <img  class="img_validaciones2" src="/img/validaciones/evalaucion_auditiva.png" alt="imagen validación psicomotriz">
+                    <h3 class="titulos_validaciones">Evaluación Auditiva</h3>
+                </li>
+                <li id="item7">
+                    <img  class="img_validaciones1" src="/img/validaciones/evaluacion_visual.png" alt="imagen validación psicomotriz">
+                    <h3 class="titulos_validaciones">Evaluación Visual</h3>
+                </li>
+                <li id="item">
+                    <img  class="img_validaciones2" src="/img/validaciones/evaluacion_medica.png" alt="imagen validación psicomotriz">
+                    <h3 class="titulos_validaciones">Evaluación Médica</h3>
+                </li>
+            </ul>
+        </section> -->
+    
+        
         <section class="informacion3">
             <h2>Valoraciones <span id="individuales">Individuales</span></h2>
             <!-- <div class="linea-verde"></div> -->
@@ -94,13 +120,40 @@
         </figure>
     </div>
 
+    <section class="info-servicios">
+
+        <div class="cuadro-verde"></div>
+        
+        <div class="cuadro_gris"></div>
+        
+        <ul class="valoraciones">
+            <li id="item1">
+                <img class="img_validaciones1" src="/img/validaciones/evaluacion_psicomotriz.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Psicomotriz</h3>
+            </li>
+            <li id="item2">
+                <img  class="img_validaciones2" src="/img/validaciones/evalaucion_auditiva.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Auditiva</h3>
+            </li>
+            <li id="item3">
+                <img  class="img_validaciones1" src="/img/validaciones/evaluacion_visual.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Visual</h3>
+            </li>
+            <li id="item4">
+                <img  class="img_validaciones2" src="/img/validaciones/evaluacion_medica.png" alt="imagen validación psicomotriz">
+                <h3 class="titulos_validaciones">Evaluación Médica</h3>
+            </li>
+        </ul>
+    </section>
+
     <section class="contactenos">
-        <h2><span>Contactanos</span></h2>
+        <h2><span class="contact">Contactanos</span></h2>
+        <div class="linea-verde1"></div>
 
         
-        <div class="cuadro_contacto"></div>
+    <div class="cuadro_contacto"> </div>
 
-        <div class="info de ocntacto">
+        <div class="infodecontacto">
             <p> AK 45 No 106 - 45 </p>
             <p> Oficina 102 y 301 </p>
             <p> Autopista Norte costado Occidental </p>
@@ -108,23 +161,23 @@
             <p> (601) 236 0931</p>
             <p> servicioalcliente@fisios.com.co </p>
         </div>
-
-        <div class="form_box"></div>
-        
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" class="input" required>
-
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" class="input" required placeholder="email@dominio.com">
-
-            <label for="mensaje">Mensaje</label>
-            <textarea cols="23" rows="10" id="mensaje" class="input" required></textarea>
-
-            <input type="submit" value="Enviar" class="enviar">
-        </form>
-    
+            <div class="form_box"></div>
+            
+            <form>
+                <label class="input1" for="nombre">Nombre:</label>
+                <input type="text" id="nombre" class="input" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" class="input" required placeholder="email@dominio.com">
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="23" rows="10" id="mensaje" class="input" required></textarea>
+                
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+            
     </section>
+    <div class="clearfix"></div>
     <footer>
         <img class="logo_fisios_foot" src="/img/logo.png" alt="Logo fisios Pie de pagina">
         <p> Rendición de cuentas </p><br>

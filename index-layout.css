@@ -3,6 +3,7 @@
     src: url(fonts/Montserrat/Montserrat.ttf);
 }
 
+/* CSS Navbar!*/
 .caja{
     width: auto;
     position: relative;
@@ -19,7 +20,7 @@ nav{
 
 nav li{
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 0.95rem;
     
     
       
@@ -31,28 +32,29 @@ nav li{
 nav a{
     text-transform:initial;
     color: white;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-family: monserrat;
     text-decoration: none;
     display:inline-flex;  
-    margin-top: 5px;
+    margin-top: 0.3rem;
     margin-left: 3em;
-    padding-top: 2px;
+    padding-top: 0.13rem;
 }
 .textop{
     align-self: center;
-    width: 150px;
+    width: 9.5rem;
     text-align: center;
 }
 
 .imgnav{
-    width: 40px;
-    margin-right: 20px;
+    width: 2.53rem;
+    margin-right: 1.3rem;
 }
 
 nav a:hover{
     color: #c78c19;
     text-decoration: underline;
+
 }
 /*container 1*/
 
@@ -284,7 +286,7 @@ nav a:hover{
 
 .informacion1 > h2,
 .informacion2 > h2,
-.informacion3 > h2 {
+.informacion3 > h2{
     font-weight: 400;
     font-size: 42px;
     color: #1E73BE;
@@ -301,7 +303,7 @@ nav a:hover{
 .informacion2 .linea-verde, 
 .informacion2 > span
 .informacion3 .linea-verde, 
-.informacion3 > span {
+.informacion3 > span{
     display: inline-block;
 }
 
@@ -370,19 +372,200 @@ nav a:hover{
     background: #65C22C;
 }
 
+/*maricaditas varias */
+
+#volante:hover{
+    transform: rotate(180deg);
+    transition: 400ms;
+}
+
+#lupa:hover{
+    transform:scale(1.2);
+    transition: 400ms;
+}
+
+#maletin:hover{
+    transform:scale(1.2);
+    filter: opacity(0.5) ;
+    transition: 400ms;
+}
+
+#pistola:hover{
+    transform:rotate(-10deg) translateX(-1rem);
+    transition: 400ms;
+}
+
+/*FIN maricaditas varias */
+
+/* FIN CSS Navbar!*/
+
+
+
+
+/* CSS imagenes valoraciones */
+
+.info-servicios{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 600px;
+}
+.cuadro_gris{
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    width: 100%;
+    height:8rem;
+    background: rgba(128, 128, 128, 0.486);
+    margin: 12rem 0;
+}
+
+.valoraciones li{
+     display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    display: inline-block; /*se alinea la liste de forma horizontal */
+    text-align: center; /* texto al centro*/
+    width: 15%;
+    vertical-align: top;  
+    margin: 0 1.0%;
+    padding: 0rem 0.08rem;
+    border-radius: 1rem;
+}
+
+.img_validaciones1{
+    box-sizing: border-box;
+    background: #65C22C;
+    padding: 1rem 0.5rem;
+    border-radius: 2rem;
+    scale:0.80;
+}
+
+.img_validaciones2{
+    box-sizing: border-box;
+    background: #1E73BE;
+    padding: 1rem 0.5rem;
+    border-radius: 2rem;
+    scale:0.80;
+    
+}
+
+#item4{
+    margin-left:75%;
+    text-align: center;
+}
+
+#item3{
+    margin-left:52%;
+    text-align: center;
+}
+
+#item2{
+    margin-left:28%;
+    text-align: center;
+}
+
+#item1{
+    margin-left:6%;
+    text-align: center;
+}
+
+
+.titulos_validaciones{
+    margin-left: 30%;
+    margin-top: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family:monserrat;
+    text-align:center;
+    color:#1E73BE;
+}
+
+
+/* FIN CSS imagenes valoraciones */
+
+
+
 /*Contactanos estructura*/
+
+
+.contact{
+    margin-left:5%;
+    font-weight: bold;
+    font-size:2.02rem;
+    font-family: monserrat;
+    color:#1E73BE
+}
+
+.linea-verde1{
+    margin-top:1%;
+    margin-left:5%;
+    width: 300px;
+    height: 10px;    
+    background: #65C22C;
+}
+
+.infodecontacto{
+    position:relative;
+    margin-left:10%;
+    margin-top: 4%;
+    background-color:#1E73BE;
+    float:left;
+    width:30%;
+    text-align:center;
+    line-height:2.5rem;
+    color:white;
+    padding: 2% 0px;
+    
+}
+
+.infodecontacto p{
+    font-family: monserrat;
+    font-weight: bold;
+}
+
+form{
+    position: relative;
+    margin-left: 50%;
+    border-left: solid;
+    border-width: 5px;
+    border-left-color: #1E73BE;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+.form_box{
+    position: relative;
+    float:left;
+    width:50%;
+    
+}
+
+
 
 form label,form legend{
     display:block;
+    font-size: 1.26rem;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color:#1E73BE;
+    margin: 10px;
 }
 
+#correo,#nombre,#mensaje{
+    margin-left: 5%;
+    padding-right: 40%;
+    padding-bottom: 0.5%;
+    background: rgb(206, 201, 201);
+    border: none;
+}
+
+
 .enviar{
-    display:block;
     width: 15%;
-    margin-left: 80%;
-    margin: 0.04em  0 1em 80%;
-    padding: 0.08em ;
-    font-size:1em;
+    margin: 1em  0 1em 70%;
+    padding: 0.2rem ;
+    font-size:1.2rem;
     font-weight: bold;
     background:#1E73BE;
     color:#fefefefe;
@@ -396,7 +579,7 @@ form label,form legend{
     background:darkblue;
     transform: scale(1.10);
     transition: 1s all;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 
 /*FIN Contactanos estructura */
@@ -452,11 +635,18 @@ footer a{
                                 "informacion-logo1 informacion-logo1"
                                 "informacion-logo2 informacion-logo2"
                                 "imagen3 imagen3"
-                                "informacion3 informacion3 ";
+                                "informacion3 informacion3 "
+                                "info-servicios info-servicios"
+                                "contactenos contactenos";
     }
     .informacion-img1,
     .informacion-img2,
     .informacion-img3 {
         width: 70%;
+    }
+
+    
+    .cuadro_gris,#item4,#item3,#item2,#item1,.valoraciones li{
+        scale:0.5;
     }
 }
