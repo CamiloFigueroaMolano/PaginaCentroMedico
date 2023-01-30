@@ -1,6 +1,10 @@
 @font-face {
-    font-family: monserrat;
+    font-family: 'Montserrat';
     src: url(fonts/Montserrat/Montserrat.ttf);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* CSS Navbar!*/
@@ -33,7 +37,6 @@ nav a{
     text-transform:initial;
     color: white;
     font-size: 0.9rem;
-    font-family: monserrat;
     text-decoration: none;
     display:inline-flex;  
     margin-top: 0.3rem;
@@ -76,13 +79,11 @@ nav a:hover{
   .titulo1{
     font-size: 40px;
     font-weight: bold;
-    font-family:monserrat;
     padding: 11px;
     color: #1E73BE;
 }
 .parrafo1{
     font-size: 36px; 
-    font-family:monserrat;
     font-weight: bold;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -92,7 +93,6 @@ nav a:hover{
 }
 .parrafo2{
     font-size: 18px; 
-    font-family:monserrat;
     padding: 10px;
     color: #777E84;
     line-height: 1.5;
@@ -106,9 +106,9 @@ nav a:hover{
   
   .recep1 {
     border-radius: 50%;
-    max-width: 70%;
-    min-height: 300px;
-    max-height: auto;
+    /* max-width: 70%;
+    min-height: 300px; */
+    max-height: 600px;
     display: inline-flex; /* Esto hace que la imagen se centre en su contenedor */
     margin: 0 auto; /* Esto centra la imagen horizontalmente */
   }
@@ -138,68 +138,100 @@ nav a:hover{
 /* tarjetas de informacion */
   
 .card-section {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 600px;
+    justify-items: start;
+    align-items: center;
+    margin-top: 320px;
+    gap: 10px;
+    /* grid-template-areas:    "informacion1 imagen1"
+                            "imagen2 informacion2"
+                            "informacion-logo1 informacion-logo2"
+                            "informacion3 imagen3"; */
+}
+
+.card-section h2 {
+    color: #FFFFFF;
+    position:relative;
+    /* position: absolute; */
+    z-index: 2;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.5;
+    justify-self: center;
+}
+
+.card-section span {
+    text-decoration: underline;
+    text-decoration-color:#8DD6FF;
+    text-decoration-thickness: 6px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* position: absolute; */
     position:relative;
     z-index: 2;
-    top:70px;
-    left: 10px;
     width: auto;
     min-width: 10%;
-    max-height: 450px;
+    max-height: 100%;
     height: auto;
     background: #D9D9D9;    
     border-radius: 40px;
     margin: 10px ;
-    padding: 1%;
-    padding-bottom: 70px;
+    padding: 10%;
 }
 
 .card-title{
-    align-items: center;
-    text-align: center;
-    font-family: monserrat;
     font-weight: bold;
     font-size: larger;
-    line-height: 21px;
-    margin-top: 60px;
+    /* line-height: 21px; */
+    /* margin-top: 60px; */
     color: #1E73BE;
 }
 
 .card-content{
-    text-align: center;
-    overflow: auto;
+    /* overflow: auto; */
     text-overflow: ellipsis;
     margin-top: 30px;
-    max-width: 230px;
-    height: 250px;
-    font-family: monserrat;
+    max-width: 100%;
+    height: 300px;
+    /* font-family: monserrat; */
     font-weight:auto;
     font-size:medium;
-    line-height: 21px;
+    line-height: 1.5;
     color: #777E84;
+}
+
+.card-content-list {
+    list-style-type : square;
 }
 
 .square1 {
     position: absolute;
+    /* position: relative; */
     left: 0px;
     z-index: 1;
-    min-width: 40%;
-    min-height: 700px;
+    width: 35%;
+    height: 600px;
     background: #1E73BE;
 }
 
 .square2 {
-   
     position: absolute;
+    /* position: relative; */
     right: 0 ;
     z-index: 1;
-    min-width: 10%;
-    min-height: 700px;
+    width: 12%;
+    height: 600px;
     background: #1E73BE;
 }
   
@@ -212,7 +244,7 @@ nav a:hover{
     grid-auto-rows: 350px 350px 350px 350px;
     text-align: end;
     justify-items: end;
-    margin-top: 350px;
+    margin-top: 10em;
     gap: 10px;
     grid-template-areas:    "informacion1 imagen1"
                             "imagen2 informacion2"
@@ -252,17 +284,14 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    text-align: justify;
-    font-family: monserrat;
     grid-area: informacion1;
     padding: 1.5rem;
+    margin-left: 2em;
 }
 .informacion2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    text-align: justify;
-    font-family: monserrat;
     grid-area: informacion2;
     padding: 1.5rem;
 }
@@ -270,8 +299,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    text-align: justify;
-    font-family: monserrat;
     grid-area: informacion3;
     padding: 1.5rem;
 }
@@ -279,9 +306,10 @@ nav a:hover{
 .informacion1 > p,
 .informacion2 > p,
 .informacion3 > p {
-    font-weight: 600;
+    text-align: center;
     font-size: 18px;
     color: #777E84;
+    line-height: 1.5;
 }
 
 .informacion1 > h2,
@@ -290,6 +318,7 @@ nav a:hover{
     font-weight: 400;
     font-size: 42px;
     color: #1E73BE;
+    text-align: start;
 }
 
 .informacion1 span,
@@ -331,8 +360,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
-    font-family: monserrat;
     grid-area: informacion-logo1;
 }
 
@@ -341,7 +368,6 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    font-family: monserrat;
     grid-area: informacion-logo2;
 }
 
@@ -354,10 +380,12 @@ nav a:hover{
 
 .servicios-logo1 > p,
 .servicios-logo2 > p {
-    font-weight: 600;
     font-size: 18px;
     color: #777E84;
     margin: 2em;
+    text-align: center;
+    margin-right: 2em;
+    line-height: 1.5;
 }
 
 #individuales {
@@ -408,6 +436,7 @@ nav a:hover{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    margin-top: 40px;
     margin-bottom: 600px;
 }
 .cuadro_gris{
@@ -421,7 +450,7 @@ nav a:hover{
 }
 
 .valoraciones li{
-     display: flex;
+    display: flex;
     flex-flow: row wrap;
     position: absolute;
     display: inline-block; /*se alinea la liste de forma horizontal */
@@ -476,7 +505,6 @@ nav a:hover{
     margin-top: 0;
     font-size: 1.6rem;
     font-weight: bold;
-    font-family:monserrat;
     text-align:center;
     color:#1E73BE;
 }
@@ -493,7 +521,6 @@ nav a:hover{
     margin-left:5%;
     font-weight: bold;
     font-size:2.02rem;
-    font-family: monserrat;
     color:#1E73BE
 }
 
@@ -519,16 +546,11 @@ nav a:hover{
     
 }
 
-.infodecontacto p{
-    font-family: monserrat;
-    font-weight: bold;
-}
-
 form{
     position: relative;
     margin-left: 50%;
     border-left: solid;
-    border-width: 5px;
+    border-width: 3px;
     border-left-color: #1E73BE;
     padding-left: 5%;
     margin-bottom: 5%;
@@ -547,13 +569,13 @@ form label,form legend{
     display:block;
     font-size: 1.26rem;
     font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
     color:#1E73BE;
     margin: 10px;
 }
 
 #correo,#nombre,#mensaje{
     margin-left: 5%;
+    margin: 1%;
     padding-right: 40%;
     padding-bottom: 0.5%;
     background: rgb(206, 201, 201);
@@ -588,7 +610,6 @@ form label,form legend{
 
 footer{
     text-align: center;
-    font-weight: bold;
     color:white;
     display:block;
     background: #1E73BE;
