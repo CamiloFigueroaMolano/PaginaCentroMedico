@@ -198,6 +198,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
@@ -238,7 +239,7 @@ nav a:hover{
     transform: perspective(400px) rotateY(180deg);
 }
 
-.card:hover .card-content{ /*front*/
+.card:hover .card-content{ /*back*/
     transform: perspective(400px) rotateY(360deg);
 }
 
@@ -265,7 +266,7 @@ nav a:hover{
     height: 600px;
     background: #1E73BE;
 }
-  
+
 
 /* ----información servicios ------ */
 
