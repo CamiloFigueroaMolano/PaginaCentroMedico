@@ -753,6 +753,128 @@ footer a{
     padding: 10px;
 }
 
+.fondo{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    height: 500px;
+}
+.container-lg{
+    background:rgb(190, 187, 187);
+    padding-bottom: 3rem;
+}
+.container-sm{
+    justify-content: center;
+}
+
+
+.titulo{
+    text-align: center;
+    background: rgb(190, 187, 187);
+    height: 3rem;
+    color:#1E73BE;
+}
+
+.linea{
+    background: green;
+    height: 0.3rem;
+    margin-bottom: 2rem;
+    margin-top: -0.8rem;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    border:none;
+    background: none;
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-top:2rem;
+    width: 25rem;
+ }
+
+
+
+.card:hover{
+    scale: 1.3;
+    z-index: 2;
+    background-color: #949da3;
+    border-radius: 5rem;
+}
+
+.card img:hover{
+    border-radius: 70%;
+}
+
+
+ .imgc{
+    border-radius: 2rem;
+    align-items: center;
+}
+/*Camilo Martinez*/
+
+.fondo{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    height: 500px;
+}
+.container-lg{
+    background:rgb(190, 187, 187);
+    padding-bottom: 3rem;
+}
+.container-sm{
+    justify-content: center;
+}
+
+
+.titulo{
+    text-align: center;
+    background: rgb(190, 187, 187);
+    height: 3rem;
+    color:#1E73BE;
+}
+
+.linea{
+    background: green;
+    height: 0.3rem;
+    margin-bottom: 2rem;
+    margin-top: -0.8rem;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    border:none;
+    background: none;
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-top:2rem;
+    width: 25rem;
+ }
+
+
+
+.card:hover{
+    scale: 1.3;
+    z-index: 2;
+    background-color: #949da3;
+    border-radius: 5rem;
+}
+
+.card img:hover{
+    border-radius: 70%;
+}
+
+
+ .imgc{
+    border-radius: 2rem;
+    align-items: center;
+}
+
+
+
+
+
+
 /* FIN footer CSS*/
 
 /* media-queries */
