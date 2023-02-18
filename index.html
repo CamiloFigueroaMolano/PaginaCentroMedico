@@ -5,36 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="index-layout.css">
     <title>Fisios</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a  href="#"> <img class="imglogo" id='logo' src="img/logo.png"></a></li> 
-                <li><a  href="#"> <img class="imgnav" id='volante' src="img/volante.png"><p class="textop">Examenes para licencia de conducir</p></a></li>
-                <li><a  href="#"> <img class="imgnav" id='lupa' src="img/lupa.png"><p class="textop"> Seguridad vial</p> </a></li>
-                <li><a  href="#"> <img class="imgnav" id='maletin' src="img/maletin.png"><p class="textop"> Salud y seguridad en el trabajo</p> </a></li>
-                <li><a  href="#"> <img class="imgnav" id='pistola' src="img/pistola.png"><p class="textop">Examenes para porte de armas</p> </a></li>
-            </ul>     
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" >
+            
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img class="imglogo" id='logo' src="img/logo.png"></a>
+                    
+                <button class="navbar-toggler" 
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="avbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                        
+                </button>   
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav"> 
+                        <li class="nav-item"><a class="nav-link"  href="#"> <img class="imgnav" id='volante' src="img/volante.png">Examenes para licencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> <img class="imgnav" id='lupa' src="img/lupa.png">Seguridad vial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> <img class="imgnav" id='maletin' src="img/maletin.png">Salud y seguridad en el trabajo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> <img class="imgnav" id='pistola' src="img/pistola.png">Examenes para porte de armas  </a></li>
+                    </ul>   
+                </div>
+            </div>    
         </nav>
     </header>
 
-    <section class="container">
-        <fieldset class="text-section">
-            <h1 class="titulo1">FISIOS</h1>
-            <h2 class="parrafo1">Tu seguridad es nuestra prioridad</h2>
-            <p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum vel, magni voluptatum accusantium quam quas tempore qui consectetur at! Aliquid corporis eum neque magnam in enim impedit ratione quod?</p>
-            <section class="buttons-section1">
-                <button class="contact-btn">Contáctanos</button>
-                <button class="info-btn">Información</button>
-            </section>
-        </fieldset>
-        <fieldset class="image-section">
-            <img class="recep1" src="./img/foto/recep1.jpg" alt="rcep1">
-        </fieldset>
-    </section>
+    <section class="container d-block w-100 p-0">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/HD-wallpaper-godzilla-8k-banner.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/banner-digital-graphics-lion.jpg" alt="" class="d-block w-100">
+            </div>
+          </div>
+          <!-- Agregar línea divisoria y botones con espacio entre ellos -->
+          <hr class="my-3">
+          <div class="carousel-controls btn-group-spacing">
+            <div class="btn-group" role="group">
+              <a href="boton1.html" class="btn btn-secondary btn-divider">Botón 1</a>
+              <a href="boton2.html" class="btn btn-secondary btn-divider">Botón 2</a>
+              <a href="boton3.html" class="btn btn-secondary">Botón 3</a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      
+      
+
+
+
+
+
+
 
     <div class="lineas-verdes-deco">
         <div class="linea-verde-encima1"></div>
@@ -85,42 +127,6 @@
         </section>
     </div>
 
-    <section class="info-servicios2">
-
-        <div class="images">
-            <img class="imgprof" src="img/validaciones/evalaucion_auditiva.png" alt="Fonoaudilogia">
-            <img class="imgprof" src="img/validaciones/evaluacion_medica.png" alt="Medicina">
-            <img class="imgprof" src="img/validaciones/evaluacion_psicomotriz.png" alt="Psicologia">
-            <img class="imgprof" src="img/validaciones/evaluacion_visual.png" alt="Optometria">
-            <!-- Agregar más imágenes aquí -->
-        </div>
-        
-        <!--   
-        <div class="cuadro-verde"></div>
-        
-        <div class="cuadro_gris"></div>
-        
-        <ul class="valoraciones">
-
-        <li id="item1">
-                <img class="img_validaciones1" src="img/evaluacion_psicomotriz.png" alt="imagen validación psicomotriz">
-                <h3 class="titulos_validaciones">Evaluación Psicomotriz</h3>
-            </li>
-            <li id="item2">
-                <img  class="img_validaciones2" src="img/evalaucion_auditiva.png" alt="imagen validación auditiva">
-                <h3 class="titulos_validaciones">Evaluación Auditiva</h3>
-            </li>
-            <li id="item3">
-                <img  class="img_validaciones1" src="img/evaluacion_visual.png" alt="imagen validación visual">
-                <h3 class="titulos_validaciones">Evaluación Visual</h3>
-            </li>
-            <li id="item4">
-                <img  class="img_validaciones2" src="img/evaluacion_medica.png" alt="imagen validación medica">
-                <h3 class="titulos_validaciones">Evaluación Médica</h3>
-            </li>
-        </ul>-->
-    </section>
-
     <section class="contactenos">
         <h2><span class="contact">Contáctanos</span></h2>
         <div class="linea-verde1"></div>
@@ -152,7 +158,7 @@
             </form>
             
     </section>
-    <div class="clearfix"></div>
+
     <footer>
         <img class="logo_fisios_foot" src="/img/logo.png" alt="Logo fisios Pie de pagina">
         <p> Rendición de cuentas </p><br>
@@ -161,25 +167,8 @@
         <img class="logo_SS" src="/img/SS.png" alt="Logo Supersalud">
     </footer>
 
-    <script>
-        const images = document.querySelectorAll(".images img");
-        let currentImageIndex = 0;
-    
-    images.forEach(imageContainer => {
-        imageContainer.addEventListener("click", event => {
-        images[currentImageIndex].style.display = "none";
-        
-        if (event.pageX < window.innerWidth / 2) {
-          currentImageIndex = (currentImageIndex + images.length - 1) % images.length;
-        } else {
-          currentImageIndex = (currentImageIndex + 1) % images.length;
-        }
-        
-        images[currentImageIndex].style.display = "flex";
-      });
-    });
-    
-    
-    </script>
+    <script src="/bootstrap/js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
 </body>
 </html>
