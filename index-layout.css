@@ -330,22 +330,47 @@ nav a:hover{
 /* ----horarios----- */
 
 .contenedor-horarios {
-    background-color: #777E84;
-    height: 20em;
-    margin-top: 10em;
+    background-color: #D9D9D9;
+    height: 10em;
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-self: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 30pt;
+    line-height: 1.5;
+}
+
+.contenedor-horarios h2 {
+    color: #1E73BE;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#65C22C;
+    text-decoration-thickness: 6px;
 }
 
 .horarios {
     background-color: #1E73BE;
-    width: 40em;
+    width: 30em;
+    height: 8em;
+    padding: 0 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    /* align-items: center; */
+    color: #FFFFFF;
+    font-size: 15pt;
+    line-height: 1.5;
+}
+
+.horarios h3 {
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.horarios p {
+    align-self: flex-end;
 }
 
 /* ----información servicios ------ */
@@ -353,7 +378,6 @@ nav a:hover{
 .contenedor-info-servicios {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    grid-auto-rows: 350px 350px 350px 350px;
     text-align: end;
     justify-items: end;
     margin-top: 10em;
@@ -475,6 +499,7 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     grid-area: informacion-logo1;
+    margin: 0.5em;
 }
 
 .servicios-logo2 {
@@ -483,6 +508,7 @@ nav a:hover{
     align-items: center;
     text-align: justify;
     grid-area: informacion-logo2;
+    margin: 0.5em;
 }
 
 .servicios-logo1 > h2,
