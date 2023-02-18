@@ -85,41 +85,7 @@
         </section>
     </div>
 
-    <section class="info-servicios2">
 
-        <div class="images">
-            <img class="imgprof" src="img/validaciones/evalaucion_auditiva.png" alt="Fonoaudilogia">
-            <img class="imgprof" src="img/validaciones/evaluacion_medica.png" alt="Medicina">
-            <img class="imgprof" src="img/validaciones/evaluacion_psicomotriz.png" alt="Psicologia">
-            <img class="imgprof" src="img/validaciones/evaluacion_visual.png" alt="Optometria">
-            <!-- Agregar más imágenes aquí -->
-        </div>
-        
-        <!--   
-        <div class="cuadro-verde"></div>
-        
-        <div class="cuadro_gris"></div>
-        
-        <ul class="valoraciones">
-
-        <li id="item1">
-                <img class="img_validaciones1" src="img/evaluacion_psicomotriz.png" alt="imagen validación psicomotriz">
-                <h3 class="titulos_validaciones">Evaluación Psicomotriz</h3>
-            </li>
-            <li id="item2">
-                <img  class="img_validaciones2" src="img/evalaucion_auditiva.png" alt="imagen validación auditiva">
-                <h3 class="titulos_validaciones">Evaluación Auditiva</h3>
-            </li>
-            <li id="item3">
-                <img  class="img_validaciones1" src="img/evaluacion_visual.png" alt="imagen validación visual">
-                <h3 class="titulos_validaciones">Evaluación Visual</h3>
-            </li>
-            <li id="item4">
-                <img  class="img_validaciones2" src="img/evaluacion_medica.png" alt="imagen validación medica">
-                <h3 class="titulos_validaciones">Evaluación Médica</h3>
-            </li>
-        </ul>-->
-    </section>
 
     <section class="contactenos">
         <h2><span class="contact">Contáctanos</span></h2>
@@ -160,14 +126,14 @@
         <a href="##########">Rendición cuentas periodo fiscal 2022</a><br>
         <img class="logo_SS" src="/img/SS.png" alt="Logo Supersalud">
     </footer>
-
-    <script>
+    
+    <script
         const images = document.querySelectorAll(".images img");
         let currentImageIndex = 0;
     
-    images.forEach(imageContainer => {
-        imageContainer.addEventListener("click", event => {
-        images[currentImageIndex].style.display = "none";
+        images.forEach(imageContainer => {
+            imageContainer.addEventListener("click", event => {
+                images[currentImageIndex].style.display = "none";
         
         if (event.pageX < window.innerWidth / 2) {
           currentImageIndex = (currentImageIndex + images.length - 1) % images.length;
