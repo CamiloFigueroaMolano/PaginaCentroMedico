@@ -3,7 +3,7 @@
     src: url(fonts/Montserrat/Montserrat.ttf);
 }
 
-body {
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -295,10 +295,10 @@ section {
 /* ----horarios----- */
 
 .contenedor-horarios {
-    background-color: #D9D9D9;
+    background-color: #ECE5E5;
     height: 32rem;
     margin-top: 10rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -310,6 +310,7 @@ section {
 
 .contenedor-horarios h2 {
     color: #1E73BE;
+    font-size: 30pt;
     margin: 1.5rem;
     font-weight: bold;
     text-decoration: underline;
@@ -323,6 +324,7 @@ section {
     height: 15rem;
     padding: 0 5rem;
     display: flex;
+    border-radius: 0.5rem;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
@@ -332,7 +334,7 @@ section {
 }
 
 .horarios h3 {
-    font-weight: bold;
+    /* font-weight: bold; */
     align-self: flex-start;
 }
 
@@ -623,95 +625,80 @@ section {
 
 /*Contactanos estructura*/
 
-
-.contact{
-    margin-left:5%;
-    font-weight: bold;
-    font-size:2.02rem;
-    color:#1E73BE
+.contactanos {
+display: grid;
+margin-top: 20rem;
 }
 
-.linea-verde1{
-    margin-top:1%;
-    margin-left:5%;
-    width: 300px;
-    height: 10px;    
-    background: #65C22C;
-}
-
-.infodecontacto{
-    position:relative;
-    margin-left:10%;
-    margin-top: 4%;
-    background-color:#1E73BE;
-    float:left;
-    width:30%;
-    text-align:center;
-    line-height:2.5rem;
-    color:white;
-    padding: 2% 0px;
-    
-}
-
-form{
+.cuadro-azul {
+    width: 50rem;
+    height: 45rem;
+    background-color: #1E73BE;
     position: relative;
-    margin-left: 50%;
-    border-left: solid;
-    border-width: 3px;
-    border-left-color: #1E73BE;
-    padding-left: 5%;
-    margin-bottom: 5%;
+    justify-self: flex-end;
+    z-index: 1;
+    top: 2rem;
 }
 
-.form_box{
-    position: relative;
-    float:left;
-    width:50%;
-    
-}
-
-
-
-form label,form legend{
-    display:block;
-    font-size: 1.26rem;
+.contactanos h2 {
+    margin: 5rem;
+    color: #1E73BE;
     font-weight: bold;
-    color:#1E73BE;
-    margin: 10px;
-}
-
-#correo,#nombre,#mensaje{
-    margin-left: 5%;
-    margin: 1%;
-    padding-right: 40%;
-    padding-bottom: 0.5%;
-    background: rgb(206, 201, 201);
-    border: none;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color:#65C22C;
+    text-decoration-thickness: 6px;
 }
 
 
-.enviar{
-    width: 15%;
-    margin: 1em  0 1em 70%;
-    padding: 0.2rem ;
-    font-size:1.2rem;
-    font-weight: bold;
-    background:#1E73BE;
-    color:#fefefefe;
-    border:none;
-    cursor:pointer;
-    text-align: center;
-    transition: 1s all;
+.formulario {
+    background-color: #ECE5E5;
+    width: 50rem;
+    position: absolute;
+    z-index: 2;
 }
 
-.enviar:hover{
-    background:darkblue;
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10rem;
+    padding: 2rem;
+    border-left: solid 2px #1E73BE;
+    margin-bottom: 2rem;
+}
+
+.datos input, textarea {
+    background-color: #B7B0B0;
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+
+.datos label {
+    color: #1E73BE;
+    font-size: 15pt;
+}
+
+.boton-enviar {
+    background-color: #1E73BE;
+    color: #FFFFFF;
+    width: 5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+
+}
+
+.boton-enviar:hover{
+    background:#65C22C;
     transform: scale(1.10);
-    transition: 1s all;
+    transition: 0.5s all;
     border-radius: 1rem;
 }
 
 /* carrusel*/
+
 .images {
     display: flex;
     justify-content: center;
@@ -734,6 +721,7 @@ form label,form legend{
 /*footer CSS*/
 
 footer{
+    margin-top: 10rem;
     text-align: center;
     color:white;
     display:block;
@@ -792,7 +780,7 @@ footer a{
     text-align: justify;
     padding-top:2rem;
     width: 25rem;
- }
+}
 
 
 
@@ -815,12 +803,12 @@ footer a{
 /*Camilo Martinez*/
 
 .fondo{
-    margin-top: 4rem;
+    margin-top: 10rem;
     margin-bottom: 2rem;
     height: 500px;
 }
 .container-lg{
-    background:rgb(190, 187, 187);
+    background:#ECE5E5;
     padding-bottom: 3rem;
 }
 .container-sm{
@@ -830,13 +818,13 @@ footer a{
 
 .titulo{
     text-align: center;
-    background: rgb(190, 187, 187);
+    background: #ECE5E5;
     height: 3rem;
     color:#1E73BE;
 }
 
 .linea{
-    background: green;
+    background: #65C22C;
     height: 0.3rem;
     margin-bottom: 2rem;
     margin-top: -0.8rem;
@@ -881,7 +869,7 @@ footer a{
 
 /* media-queries */
 @media screen and (max-width: 768px) {
-    .card {
+    /* .card {
         position:relative;
         z-index: 2;
         top:70px;
@@ -894,7 +882,7 @@ footer a{
         margin: 10px ;
         padding: 3%;
         padding-bottom: 109px;
-    }
+    } */
     .contenedor-info-servicios {grid-template-areas:    
                                 "imagen1 imagen1"
                                 "informacion1 informacion1"
