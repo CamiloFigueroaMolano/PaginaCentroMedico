@@ -5,9 +5,11 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    padding-top: 90px;
 }
 
-/* CSS Navbar!*/
+/* CSS Navbar!*/   
+
 .caja{
     width: auto;
     position: relative;
@@ -17,22 +19,23 @@
 
 nav{
     background: #1E73BE;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+
 }
 
 nav li{
     display: inline;
-    margin: 0 0 0 0.1rem;
-
-    
+    margin: 0 0 0 0.4rem; 
+      
 }
 
 .imglogo{
     position: relative;
     width:130px;
     left: -40px;
-
-
 }
 
 nav a{
@@ -41,10 +44,9 @@ nav a{
     font-size: 0.9rem;
     margin-top: 10px;
     margin-bottom: 15px;
-    margin-left: 3.5em;
-    
-}
+    margin-left: 3em;
 
+}
 .imgnav{
     position:absolute;
     left: -38px;
@@ -52,65 +54,78 @@ nav a{
     width: 2.5em;
     margin-right: 100rem;
 }
-
 nav a:hover{
-
     text-decoration: underline;
-
 }
-/*carousel*/
-section {
-    margin-top: 60px;
+
+/*socialmedia*/
+.social-media-icons {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    
   }
- 
   
-  /* Ajustar el tamaño de las imágenes del carrusel y centrarlas verticalmente */
-  .carousel-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+  .social-media-icons a {
     display: block;
-    margin: 0 auto;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #65C22C;
+    border-radius: 50%;
   }
   
+/*carousel*/
+.carousel-item {
+   padding-top: 10px;
+  }
+
   /* Agregar estilo a los botones del carrusel */
+  
   .carousel-controls .btn {
-    border-radius: 0;
-    padding: 10px 15px;
+   position: relative;
+    border-radius: 20px;
     font-size: 16px;
     font-weight: 500;
     color: #333;
     background-color: #f8f9fa;
-    border-color: #f8f9fa;
+    border-color: #4185ca;
+    margin-top: -150px;
+    padding: 0px 40px;
   }
-  
-  /* Agregar estilo al botón activo del carrusel */
-  .carousel-controls .btn.active {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: #fff;
-  }
-  
-  /* Agregar estilo a la línea divisoria y al espacio entre botones */
-  .btn-divider {
-    border-right: 1px solid #ccc;
-  }
-  
-  .btn-group-spacing {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  /* Agregar estilo a la línea horizontal en la parte superior del carrusel */
-  hr {
-    border-top: 1px solid #ccc;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-  
-  
 
+  .custom-btn {
+    width: 100%;
+    max-width: 200px;
+    font-size: 1.5vw;
+    padding: 0.5vw 1.5vw;
+    margin: 0.5vw;
+  }
+
+
+  .carousel-controls .btn:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    font-size: 0;
+    line-height: 0;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: inline-block;
+    width: 50px; /* ajustar tamaño del icono */
+    height: 50px; /* ajustar tamaño del icono */
+    background-size: 100% 100%;
+  }
 
 /* tarjetas de informacion */
 
@@ -534,9 +549,6 @@ section {
 
 /*FIN maricaditas varias */
 
-/* FIN CSS Navbar!*/
-
-
 
 
 /* CSS imagenes valoraciones */
@@ -697,25 +709,6 @@ margin-top: 20rem;
     border-radius: 1rem;
 }
 
-/* carrusel*/
-
-.images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    overflow: hidden;
-}
-
-.images img {
-    display: none;
-    width: 50%;
-}
-
-.images img:first-child {
-    display: flex;
-}
-
 /*FIN Contactanos estructura */
 
 /*footer CSS*/
@@ -861,15 +854,22 @@ footer a{
 }
 
 
-
-
-
-
 /* FIN footer CSS*/
 
 /* media-queries */
+
+
 @media screen and (max-width: 768px) {
-    /* .card {
+    body{
+        padding-top: 70px;
+    }
+
+    nav{
+        height: auto;
+    
+    }
+
+    .card {
         position:relative;
         z-index: 2;
         top:70px;
