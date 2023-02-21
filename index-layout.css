@@ -758,10 +758,6 @@ margin-top: 20rem;
     width: 25rem;
 }
 
-
-
-
-
  .imgc{
     border-radius: 2rem;
     align-items: center;
@@ -772,13 +768,26 @@ margin-top: 20rem;
 
 
 /*maps*/
+.cuadro_contacto{
+    
+    background: #1E73BE;
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+    margin-right: 20px;
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    
+    
+}
 
-.maps2{
-    padding-left: 4rem;
-    padding-top: 4rem;
-    width:600; 
-    height:450; 
-    border:0;
+.mapa{
+    width: 600px;
+   
+    
 }
 
 /*fin maps*/
