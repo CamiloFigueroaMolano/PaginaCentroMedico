@@ -14,7 +14,7 @@
 <body>
     <header>
         <!--NAVBAR-->
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" >
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" >
             
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"> <img class="imglogo" id='logo' src="img/logo.png"></a>
@@ -28,13 +28,13 @@
                     aria-label="Toggle navigation">
 
                     <span class="navbar-toggler-icon"></span>
-                        
+                      
                 </button>   
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav"> 
                         <li class="nav-item"><a class="nav-link"  href="#"> <img class="imgnav" id='volante' src="img/volante.png">Examenes para licencia</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"> <img class="imgnav" id='lupa' src="img/lupa.png">Seguridad vial</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> <img class="imgnav" id='maletin' src="img/maletin.png">Salud y seguridad en el trabajo</a></li>
+                         <li class="nav-item "><a class="nav-link" href="#"> <img class="imgnav" id='maletin' src="img/maletin.png">Salud y seguridad en el trabajo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"> <img class="imgnav" id='pistola' src="img/pistola.png">Examenes para porte de armas  </a></li>
                     </ul>   
                 </div>
@@ -42,7 +42,13 @@
         </nav>
     </header>
 
-    <section class="container d-block w-100 p-0">
+    <div class="social-media-icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+
+   
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -52,16 +58,28 @@
               <img src="/img/banner-digital-graphics-lion.jpg" alt="" class="d-block w-100">
             </div>
           </div>
-          <!-- Agregar línea divisoria y botones con espacio entre ellos -->
           <hr class="my-3">
-          <div class="carousel-controls btn-group-spacing">
-            <div class="btn-group" role="group">
-              <a href="boton1.html" class="btn btn-secondary btn-divider">Botón 1</a>
-              <a href="boton2.html" class="btn btn-secondary btn-divider">Botón 2</a>
-              <a href="boton3.html" class="btn btn-secondary">Botón 3</a>
+          <div class="carousel-controls btn-group-spacing btn-group-divider">
+           
+            
+            <div class="container">
+                <div class="row flex-row flex-wrap justify-content-center">
+                  <div class="col-12 col-sm-auto">
+                    <a href="boton1.html" class="btn btn-secondary custom-btn">Botón 1</a>
+                  </div>
+                  <div class="col-12 col-sm-auto">
+                    <a href="boton2.html" class="btn btn-secondary custom-btn">Botón 2</a>
+                  </div>
+                  <div class="col-12 col-sm-auto">
+                    <a href="boton3.html" class="btn btn-secondary custom-btn">Botón 3</a>
+                  </div>
+                </div>
+              </div>
+              
+            
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -72,7 +90,9 @@
         </div>
       </section>
       
-    
+
+    <!-- seccion nuestros servicios -->
+
     <div class="lineas-verdes-deco">
         <div class="linea-verde-encima1"></div>
         <div class="linea-verde-encima2"></div>
@@ -83,17 +103,17 @@
     <div class="card1-section">
         <h2>Nuestros<br><span>servicios</span></h2>
         <div class="square1"></div>
-        <section class="card1">
-            <div class="card1-title" id="licencia"><h3>Licencia de conducción</h3></div>
-            <div class="card1-content">Evaluación y certificación de la actitud física, mental y coordinación motriz para refrendar, recategorizar y sacar por primera vez la licencia de conducción, exigida por el Ministerio de Transporte. Resolución 217 de 2014.</div>
+        <section class="cardss">
+            <div class="card-title1" id="licencia"><h3>Licencia de conducción</h3></div>
+            <div class="card-content">Evaluación y certificación de la actitud física, mental y coordinación motriz para refrendar, recategorizar y sacar por primera vez la licencia de conducción, exigida por el Ministerio de Transporte. Resolución 217 de 2014.</div>
         </section>
-        <section class="card1">
-            <div class="card1-title" id="armas"><h3>Porte y/o tenencia de armas de fuego</h3></div>
-            <div class="card1-content">Evaluación y certificación de la actitud psicofísica para el porte y/o tenencia de armas de fuego, para renovación de salvoconducto y seguridad privada, exigida por el Ministerio de Defensa Nacional. Resolución 2984 de 2007.</div>
+        <section class="cardss">
+            <div class="card-title1" id="armas"><h3>Porte y/o tenencia de armas de fuego</h3></div>
+            <div class="card-content">Evaluación y certificación de la actitud psicofísica para el porte y/o tenencia de armas de fuego, para renovación de salvoconducto y seguridad privada, exigida por el Ministerio de Defensa Nacional. Resolución 2984 de 2007.</div>
         </section>
-        <section class="card1">
-            <div class="card1-title" id="examenes"><h3>Exámenes individuales</h3></div>
-            <div class="card1-content"><p>Ofrecemos servicios especializados de valoraciones individuales para las personas que requieren realizar una valoración médica, valoración psicológica, valoración de fonoaudiología y visiometrias. Así prevenir y detectar cualquier anomalía en su salud.</p> 
+        <section class="cardss">
+            <div class="card-title1" id="examenes"><h3>Exámenes individuales</h3></div>
+            <div class="card-content"><p>Ofrecemos servicios especializados de valoraciones individuales para las personas que requieren realizar una valoración médica, valoración psicológica, valoración de fonoaudiología y visiometrias. Así prevenir y detectar cualquier anomalía en su salud.</p> 
             </div>
         </section>
         <div class="square2"></div>
@@ -114,6 +134,8 @@
         </section>
     </div>
 
+    <!-- seccion horarios -->
+
     <div class="contenedor-horarios">
         <h2>Horarios</h2>
         <section class="horarios">
@@ -123,6 +145,8 @@
             <p>6:00 am - 1:00 pm</p>
         </section>
     </div>
+
+    <!-- seccion nosotros -->
 
     <div class="row fondo">
         <div class="container-lg container-sm col-12">
@@ -158,6 +182,28 @@
                 </div>
             </div>
         </div>
+        
+        </div>
+    
+    <!-- seccion contactanos -->
+
+    <section class="contactanos">
+        <div class="formulario">
+            <h2>Contáctanos</h2>
+            <form class="datos">
+                <label for="inputName">Nombre:</label>
+                <input type="text" id="inputName" placeholder="Fisios">
+                <label for="inputEmail">Correo:</label>
+                <input type="email" id="inputEmail" placeholder="fisios@fisios.com">
+                <label for="inputMessage">Mensaje:</label>
+                <textarea id="floatingTextareaMessage" placeholder="Deja tu mensaje..."></textarea>
+                <button type="submit" class="boton-enviar">ENVIAR</button>
+            </form>
+        </div>
+        <div class="cuadro-azul"></div>
+    </section>
+
+
         <div class="container-fluid w-100 py-1" style="height:2rem;"></div>
 
         <div class="container-fluid brian pt-5 mt-5">brian</div>
@@ -254,15 +300,10 @@
         
     </div>
     
-        
-
-
-    
-    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+
 
     
 </body>
