@@ -771,16 +771,6 @@ form label,form legend{
 
 
 
-.card:hover{
-    scale: 1.3;
-    z-index: 2;
-    background-color: #949da3;
-    border-radius: 5rem;
-}
-
-.card imgc:hover{
-    border-radius: 70%;
-}
 
 
  .imgc{
@@ -791,37 +781,46 @@ form label,form legend{
 /*infocards1*/
 
 
+/*maps*/
+
+.maps2{
+    padding-left: 4rem;
+    padding-top: 4rem;
+    width:600; 
+    height:450; 
+    border:0;
+}
+
+/*fin maps*/
+
 /*footer CSS*/
 
-footer{
+.foot1{
     text-align: center;
     color:white;
-    display:block;
     background: #1E73BE;
     padding-top: 50px;
 }
 
 .logo_fisios_foot{
+    scale: 2;
     padding: 10px;
+    padding-bottom: 10px;
     height: 2.5em;
 }
 
-footer a{
+.foot1 a{
     color:white;
 }
 
 .logo_SS{
-    height: 1.5em;
+    background-color:black;
     padding: 10px;
 }
 
 .cuadroC{
     background-color: black;
 }
-
-
-
-
 
 /* FIN footer CSS*/
 
