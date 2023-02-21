@@ -148,7 +148,7 @@ nav a:hover{
 }
 
 
-.card-section {
+.card1-section {
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -167,7 +167,7 @@ nav a:hover{
                             "informacion3 imagen3"; */
 }
 
-.card-section h2 {
+.card1-section h2 {
     color: #FFFFFF;
     position:relative;
     /* position: absolute; */
@@ -178,7 +178,7 @@ nav a:hover{
     justify-self: center;
 }
 
-.card-section span {
+.card1-section span {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color:#8DD6FF;
@@ -186,6 +186,7 @@ nav a:hover{
 }
 
 .cardss {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,6 +206,7 @@ nav a:hover{
     padding: 40px;
 }
 
+
 .cardss div {
     position: absolute;
     z-index: 2;
@@ -218,6 +220,7 @@ nav a:hover{
     transition: 1s;
     filter: drop-shadow(-28px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 
 .cardss .card-title1{ /*front*/
     font-weight: bold;
@@ -247,6 +250,7 @@ nav a:hover{
     background-image: url('./img/foto/examenes-individuales.png');
 }
 
+
 .card-title1 h3 {
     background: rgba(255, 255, 255, 0.7);
     border: 4px solid #FFFFFF;
@@ -254,6 +258,7 @@ nav a:hover{
     margin: 0.8rem;
     padding: 0.5rem;
 }
+
 
 .cardss .card-content{ /*back*/
     /* overflow: auto;
@@ -282,7 +287,7 @@ nav a:hover{
     transform: perspective(400px) rotateY(360deg);
 }
 
-.card-content-list {
+.card1-content-list {
     list-style-type : square;
 }
 
@@ -711,30 +716,8 @@ margin-top: 20rem;
 
 /*FIN Contactanos estructura */
 
-/*footer CSS*/
 
-footer{
-    margin-top: 10rem;
-    text-align: center;
-    color:white;
-    display:block;
-    background: #1E73BE;
-    padding-top: 50px;
-}
-
-.logo_fisios_foot{
-    padding: 10px;
-    height: 2.5em;
-}
-
-footer a{
-    color:white;
-}
-
-.logo_SS{
-    height: 1.5em;
-    padding: 10px;
-}
+/*infocards*/
 
 .fondo{
     margin-top: 4rem;
@@ -777,99 +760,68 @@ footer a{
 
 
 
-.card:hover{
-    scale: 1.3;
-    z-index: 2;
-    background-color: #949da3;
-    border-radius: 5rem;
-}
-
-.card img:hover{
-    border-radius: 70%;
-}
 
 
  .imgc{
     border-radius: 2rem;
     align-items: center;
 }
-/*Camilo Martinez*/
-
-.fondo{
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    height: 500px;
-}
-.container-lg{
-    background:#ECE5E5;
-    padding-bottom: 3rem;
-}
-.container-sm{
-    justify-content: center;
-}
 
 
-.titulo{
+/*infocards1*/
+
+
+/*maps*/
+
+.maps2{
+    padding-left: 4rem;
+    padding-top: 4rem;
+    width:600; 
+    height:450; 
+    border:0;
+}
+
+/*fin maps*/
+
+/*footer CSS*/
+
+.foot1{
     text-align: center;
-    background: #ECE5E5;
-    height: 3rem;
-    color:#1E73BE;
+    color:white;
+    background: #1E73BE;
+    padding-top: 50px;
 }
 
-.linea{
-    background: #65C22C;
-    height: 0.3rem;
-    margin-bottom: 2rem;
-    margin-top: -0.8rem;
-    align-items: center;
+.logo_fisios_foot{
+    scale: 2;
+    padding: 10px;
+    padding-bottom: 10px;
+    height: 2.5em;
 }
 
-.card{
-    width: 100%;
-    border:none;
-    background: none;
-    font-size: 0.7rem;
-    text-align: justify;
-    padding-top:2rem;
-    width: 25rem;
- }
-
-
-
-.card:hover{
-    scale: 1.3;
-    z-index: 2;
-    background-color: #949da3;
-    border-radius: 5rem;
+.foot1 a{
+    color:white;
 }
 
-.card img:hover{
-    border-radius: 70%;
+.logo_SS{
+    background-color:black;
+    padding: 10px;
 }
 
-
- .imgc{
-    border-radius: 2rem;
-    align-items: center;
+.cuadroC{
+    background-color: black;
 }
 
-
-/* FIN footer CSS*/
-
-/* media-queries */
-
-
-@media screen and (max-width: 768px) {
-    body{
-        padding-top: 70px;
-    }
 
     nav{
         height: auto;
     
     }
 
-    .card {
+
+/* media-queries */
+@media screen and (max-width: 768px) {
+    .card1 {
         position:relative;
         z-index: 2;
         top:70px;
