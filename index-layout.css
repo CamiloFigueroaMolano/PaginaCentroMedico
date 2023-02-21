@@ -3,9 +3,9 @@
     src: url(fonts/Montserrat/Montserrat.ttf);
 }
 
-* {
+body {
     font-family: 'Montserrat', sans-serif;
-    padding-top: 90px;
+    padding-top: 72px;
 }
 
 /* CSS Navbar!*/   
@@ -820,7 +820,30 @@ margin-top: 20rem;
 
 
 /* media-queries */
+@media screen and (max-width: 919px) {
+    body{
+        
+        padding-top: 89px;
+    }
+}
+@media screen and (max-width: 821px) {
+    body{
+        
+        padding-top: 130px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    body{
+        
+        padding-top: 70px;
+    }
+
+    nav{
+        height: auto;
+    
+    }
+    
     .card1 {
         position:relative;
         z-index: 2;
