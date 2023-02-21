@@ -653,9 +653,8 @@ margin-top: 20rem;
 
 .datos {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-left: 10rem;
+    margin-top: -80px;
+    margin-left: 2rem;
     padding: 2rem;
     border-left: solid 2px #1E73BE;
     margin-bottom: 2rem;
