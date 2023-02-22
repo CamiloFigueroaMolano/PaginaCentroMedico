@@ -48,7 +48,7 @@
       <a href="#" class="fa fa-instagram"></a>
     </div>
 
-   
+  <section class="carrusel">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -97,8 +97,6 @@
         <div class="linea-verde-encima1"></div>
         <div class="linea-verde-encima2"></div>
     </div>
-
-    
 
     <div class="card1-section">
         <h2>Nuestros<br><span>servicios</span></h2>
@@ -187,30 +185,39 @@
     
     <!-- seccion contactanos -->
 
+            
+            
     <section class="contactanos">
         <div class="formulario">
             <h2>Contáctanos</h2>
-            <form class="datos">
+            
+            <script type="text/javascript">var submitted=false</script>
+            <iframe name="confirm" id="confirm" style="display: none;" onload="if (submitted){window.location='index.html';}"></iframe>
+
+            <form class="datos" id="contactanos" action="https://docs.google.com/forms/d/e/1FAIpQLScNfceHUphnxPvirGRxZeYq9OSYSWzRjhp8ca5nln_yWDh7uA/formResponse" method="post" target="confirm" onsubmit="submitted=true">
                 <label for="inputName">Nombre:</label>
-                <input type="text" id="inputName" placeholder="Fisios">
+                <input type="text" name="entry.2046595318" id="inputName" placeholder="Fisios">
                 <label for="inputEmail">Correo:</label>
-                <input type="email" id="inputEmail" placeholder="fisios@fisios.com">
+                <input type="email" name="entry.70544899" id="inputEmail" placeholder="fisios@fisios.com">
                 <label for="inputMessage">Mensaje:</label>
-                <textarea id="floatingTextareaMessage" placeholder="Deja tu mensaje..."></textarea>
-                <button type="submit" class="boton-enviar">ENVIAR</button>
+                <textarea id="floatingTextareaMessage" name="entry.816126756" placeholder="Deja tu mensaje..."></textarea>
+                <input type="submit" class="boton-enviar"></input>
             </form>
         </div>
         <div class="cuadro-azul"></div>
     </section>
-
+<!--PRUEBA MODAL DEPUES DE ENVIAR FORMULARIO-->
+<div class="modal" id="myModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>¡Gracias por tus datos!</h2>
+    <p>Pronto nos pondremos en contacto contigo.</p>
+  </div>
+</div>
 
         <div class="container-fluid w-100 py-1" style="height:2rem;"></div>
 
-   
-
-    
-        
-        <section class=" row  py-5 contactenos justify-content-between ">
+        <section class=" row  py-5  justify-content-between contactenos">
             <div class="linea-verde1" id="lienacont"></div>
         
             <div class="row">
@@ -304,7 +311,33 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+<!--SCRIPT MODAL FORM-->
+    <script>
+    //obtenemos el modal con un get
+var modal = document.getElementById("myModal");
 
+// ontenemos el la x para cerra el mensaje
+var closeBtn = document.querySelector(".close");
+
+// si se oprime x se cierra la ventana modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+};
+
+// obtenemos el formulario
+var form = document.getElementById("contactanos");
+
+// cuando se le da al boton enviar aparece la ventana modal y envia el formulario
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // evita que haga submit
+  modal.style.display = "block";
+  // envia el formulario depues de un tiempo
+  setTimeout(function() {
+    form.submit();
+  }, 5000); // espera 5 segundos para enviar
+});
+  </script>
 
     
 </body>
