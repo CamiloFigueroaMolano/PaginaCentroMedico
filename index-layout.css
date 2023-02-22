@@ -632,7 +632,7 @@ nav a:hover{
 
 .contactanos {
 display: grid;
-margin-top: 20rem;
+margin-top: 1rem;
 }
 
 .contactenos {
@@ -750,12 +750,10 @@ margin-top: 20rem;
 /*infocards*/
 
 .fondo{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    height: 500px;
+    background: #ECE5E5;
 }
 .container-lg{
-    background:rgb(190, 187, 187);
+    
     padding-bottom: 3rem;
 }
 .container-sm{
@@ -765,13 +763,16 @@ margin-top: 20rem;
 
 .titulo{
     text-align: center;
-    background: rgb(190, 187, 187);
+   
     height: 3rem;
     color:#1E73BE;
 }
 
 .linea{
-    background: green;
+    background: #65C22C;
+    width: 18%;
+    margin-left: 41%;
+    align-items: center;
     height: 0.3rem;
     margin-bottom: 2rem;
     margin-top: -0.8rem;
@@ -803,21 +804,21 @@ margin-top: 20rem;
     background: #1E73BE;
     width: 400px;
     height: auto;
-    margin-left: 150px;
-    margin-right: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     color: white;
     font-size: larger;
     font-weight: 400;
     text-align: center;
-    padding-top: 50px;
+    
     
     
 }
 
-.mapa{
-    width: 600px;
-   
-    
+iframe{
+    align-items: center;
+    width: 100%;
+    height: 450px;
 }
 
 /*fin maps*/
@@ -847,23 +848,28 @@ margin-top: 20rem;
     padding: 10px;
 }
 
-.cuadroC{
-    background-color: black;
+.SS{
+    background-image: url(./img/SS.png);
 }
 
 
-    nav{
-        height: auto;
-    
-    }
-
 
 /* media-queries */
+
 @media screen and (max-width: 919px) {
     body{
         
         padding-top: 89px;
     }
+
+    iframe{
+        padding: 3rem;
+        align-items: center;
+        width: 100%;
+        height: 450px;
+    }
+
+
 }
 @media screen and (max-width: 821px) {
     body{
