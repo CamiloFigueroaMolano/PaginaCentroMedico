@@ -87,7 +87,7 @@ nav a:hover{
     margin-bottom: -200px;
 }
 .carousel-item {
-   padding-top: 10px;
+   padding-top: 90px;
   }
 
   /* Agregar estilo a los botones del carrusel */
@@ -748,10 +748,7 @@ iframe{
 /* media-queries */
 
 @media screen and (max-width: 919px) {
-    body{
-        
-        padding-top: 89px;
-    }
+
 
     iframe{
         padding: 3rem;
@@ -762,23 +759,10 @@ iframe{
 
 
 }
-@media screen and (max-width: 821px) {
-    body{
-        
-        padding-top: 130px;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
-    body{
-        
-        padding-top: 70px;
-    }
-
-    nav{
-        height: auto;
-    
-    }
+   
     
     .card1 {
         position:relative;
