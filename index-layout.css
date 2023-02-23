@@ -753,6 +753,7 @@ iframe{
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-top: 8rem;
 }
 
 .contenedor-made-by img {
@@ -849,5 +850,10 @@ iframe{
     
     .cuadro_gris,#item4,#item3,#item2,#item1,.valoraciones li{
         scale:0.5;
+    }
+
+    .cuadro_contacto {
+        max-width: 100vw;
+        margin: 0;
     }
 }
