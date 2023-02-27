@@ -329,7 +329,7 @@ nav a:hover{
     background-color: #ECE5E5;
     height: 32rem;
     margin-top: 10rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -536,7 +536,7 @@ margin-top: 5rem;
 }
 
 .cuadro-azul {
-    width: 45vw;
+    width: 45rem;
     height: 45rem;
     background-color: #1E73BE;
     position: relative;
@@ -548,7 +548,7 @@ margin-top: 5rem;
 
 .contactanos h2 {
     margin: 5rem;
-    width: 13rem;
+    width: 12rem;
     color: #1E73BE;
     font-weight: bold;
     font-size: 30px;
