@@ -6,6 +6,7 @@
 * {
     font-family: 'Montserrat', sans-serif;
     padding-top: 72px;
+    
 }
 
 /* CSS Navbar!*/   
@@ -14,7 +15,6 @@
     width: auto;
     position: relative;
     margin: 0 auto;
-    
 }
 
 nav{
@@ -23,7 +23,6 @@ nav{
     top: 0;
     width: 100%;
     height: 100px;
-
 }
 
 nav li{
@@ -42,7 +41,7 @@ nav a{
     position: relative;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 15px;
     margin-left: 3em;
 
@@ -100,21 +99,19 @@ nav a:hover{
     color: #333;
     background-color: #f8f9fa;
     border-color: #4185ca;
-    margin-top: -80px;
+    margin-top: -120px;
     padding: 0px 40px;
   }
 
   #contenedor-botones {
     display: flex;
     flex-direction: row;
-    /* gap: 5rem; */
 }
 
   .custom-btn {
     width: 100%;
     max-width: 100vw;
     font-size: 10pt;
-    /* padding: 0.5rem 0.5rem; */
     margin: 0.5rem;
   }
 
@@ -140,7 +137,7 @@ nav a:hover{
 /* tarjetas de informacion */
 
 .lineas-verdes-deco {
-    margin-top: 18rem;
+    margin-top: 17rem;
     display: flex;
     justify-content: space-between; 
     position: relative;
@@ -771,6 +768,8 @@ iframe{
 
 /* media-queries */
 
+
+
 @media screen and (max-width: 919px) {
 
 
@@ -796,6 +795,19 @@ iframe{
     }
 } */
 @media screen and (max-width: 768px) {
+    nav{
+        background: #1E73BE;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .carousel-controls .btn{
+        margin-top: -100px;
+    }
+    .lineas-verdes-deco {
+        margin-top: 12rem;
+    }
 
     #contenedor-botones{
         flex-direction: row;
@@ -824,7 +836,7 @@ iframe{
     }
 
     .lineas-verdes-deco {
-        margin-bottom: 0.5rem;
+        margin-bottom: -4rem;
     }
 
         #titulo2-nuestros {
@@ -841,6 +853,7 @@ iframe{
         justify-content: flex-start;
         background-color: #4185ca;
         padding: 0 2rem;
+        margin-bottom: -12rem;
     }
 
     .cardss .card-content {
@@ -895,5 +908,11 @@ iframe{
     .cuadro_contacto {
         max-width: 100vw;
         margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .carousel-controls .btn{
+            margin-top: -84px;
+        }
     }
 }
