@@ -6,6 +6,7 @@
 * {
     font-family: 'Montserrat', sans-serif;
     padding-top: 72px;
+    
 }
 
 /* CSS Navbar!*/   
@@ -14,7 +15,6 @@
     width: auto;
     position: relative;
     margin: 0 auto;
-    
 }
 
 nav{
@@ -23,7 +23,6 @@ nav{
     top: 0;
     width: 100%;
     height: 100px;
-
 }
 
 nav li{
@@ -42,7 +41,7 @@ nav a{
     position: relative;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 15px;
     margin-left: 3em;
 
@@ -91,7 +90,7 @@ nav a:hover{
   }
 
   /* Agregar estilo a los botones del carrusel */
-  
+
   .carousel-controls .btn {
     position: relative;
     border-radius: 20px;
@@ -100,16 +99,20 @@ nav a:hover{
     color: #333;
     background-color: #f8f9fa;
     border-color: #4185ca;
-    margin-top: -80px;
+    margin-top: -120px;
     padding: 0px 40px;
   }
 
+  #contenedor-botones {
+    display: flex;
+    flex-direction: row;
+}
+
   .custom-btn {
     width: 100%;
-    max-width: 200px;
-    font-size: 1.5vw;
-    padding: 0.5vw 1.5vw;
-    margin: 0.5vw;
+    max-width: 100vw;
+    font-size: 10pt;
+    margin: 0.5rem;
   }
 
 
@@ -134,7 +137,7 @@ nav a:hover{
 /* tarjetas de informacion */
 
 .lineas-verdes-deco {
-    margin-top: 20rem;
+    margin-top: 17rem;
     display: flex;
     justify-content: space-between; 
     position: relative;
@@ -152,6 +155,9 @@ nav a:hover{
     background: #65C22C;
 }
 
+#titulo2-nuestros {
+    display: none;
+}
 
 .card1-section {
     margin-top: 2.5rem;
@@ -181,7 +187,6 @@ nav a:hover{
 
 .card1-section span {
     font-weight: bold;
-    
 }
 
 .cardss {
@@ -262,12 +267,12 @@ nav a:hover{
 .cardss .card-content{ /*back*/
     /* overflow: auto;
     text-overflow: ellipsis;
-    margin-top: 30px;
     max-width: 100%;
-    height: auto;
     font-family: monserrat;
     font-size:medium;
     line-height: 1.5; */
+    height: 100%;
+    margin-top: 0.5rem;
     font-size: 10.5pt;
     border-radius: 40px;
     padding: 10px 20px;
@@ -409,7 +414,7 @@ nav a:hover{
     line-height: 1.5;
 }
 
-/*maricaditas varias */
+/* hover navbar */
 
 #volante:hover{
     transform: rotate(180deg);
@@ -432,7 +437,7 @@ nav a:hover{
     transition: 400ms;
 }
 
-/*FIN maricaditas varias */
+/*FIN hover navbar */
 
 
 
@@ -527,23 +532,20 @@ display: grid;
 margin-top: 5rem;
 }
 
-.contactenos {
-    margin-top: 50px;
-}
-
 .cuadro-azul {
-    width: 50rem;
+    width: 45rem;
     height: 45rem;
     background-color: #1E73BE;
     position: relative;
     justify-self: flex-end;
     z-index: 1;
     top: 2rem;
+    right: 0.5rem;
 }
 
 .contactanos h2 {
     margin: 5rem;
-    width: 13rem;
+    width: 12rem;
     color: #1E73BE;
     font-weight: bold;
     font-size: 30px;
@@ -740,20 +742,24 @@ iframe{
 .contenedor-made-by {
     display: flex;
     flex-wrap: wrap;
-    height: 10rem;
+    height: 100%;
+    width: 100vw;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-top: 8rem;
+    padding: 1rem;
+    margin-left: 1rem;
 }
 
 .contenedor-made-by img {
-    width: 16%;
+    width: 20%;
     text-align: center;
 }
 
 
 /* media-queries */
+
+
 
 @media screen and (max-width: 919px) {
 
@@ -765,12 +771,45 @@ iframe{
         height: 450px;
     }
 
+    .cardss .card-content {
+        height: auto;
+    }
 
+    #titulo2-nuestros {
+        display: none;
+    }
 }
 
-
+/* @media screen and (max-width: 820px){
+    #titulo2-nuestros {
+        display: none;
+    }
+} */
 @media screen and (max-width: 768px) {
-   
+    nav{
+        background: #1E73BE;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .carousel-controls .btn{
+        margin-top: -100px;
+    }
+    .lineas-verdes-deco {
+        margin-top: 12rem;
+    }
+
+    #contenedor-botones{
+        flex-direction: row;
+        /* gap: 0; */
+    }
+
+    #botoness {
+        font-size: 6pt;
+        padding: 0;
+
+    }
     
     .card1 {
         position:relative;
@@ -787,7 +826,16 @@ iframe{
         padding-bottom: 109px;
     }
 
+    .lineas-verdes-deco {
+        margin-bottom: -4rem;
+    }
+
+        #titulo2-nuestros {
+        display: block;
+    }
+
     .card1-section {
+        margin-top: 0.5rem;
         flex-direction: column;
         height: 50rem;
         width: 100vw;
@@ -796,6 +844,11 @@ iframe{
         justify-content: flex-start;
         background-color: #4185ca;
         padding: 0 2rem;
+        margin-bottom: -12rem;
+    }
+
+    .cardss .card-content {
+        height: 100%;
     }
 
     .square1 {
@@ -846,5 +899,11 @@ iframe{
     .cuadro_contacto {
         max-width: 100vw;
         margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .carousel-controls .btn{
+            margin-top: -84px;
+        }
     }
 }
