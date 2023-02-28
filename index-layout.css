@@ -778,6 +778,11 @@ iframe{
     #titulo2-nuestros {
         display: none;
     }
+
+    #logocomp{
+        scale:1;
+
+    }
 }
 
 /* @media screen and (max-width: 820px){
@@ -901,9 +906,17 @@ iframe{
         margin: 0;
     }
 
+    #logocomp{
+        scale:1;
+        
+    }
     @media screen and (max-width: 768px) {
         .carousel-controls .btn{
             margin-top: -84px;
+        }
+        #logocomp{
+            scale:1;
+            
         }
     }
 }
