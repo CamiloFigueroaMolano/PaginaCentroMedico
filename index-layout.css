@@ -868,22 +868,22 @@ iframe{
 
     #logocomp{
         scale:1;
-
     }
 
     .contenedor-horarios{
         padding-top: 5rem;
-        padding-bottom: 20rem;
+        padding-bottom: 22rem;
     }
+
     .horarios{
-        
-        margin-top:20rem;
+        margin-top:15rem;
        display: block;
        position: absolute;
        scale:.8;
       }
 
       .horarios2{
+        margin: 2rem;
         height:2.5rem; 
         width:60%; 
         scale:1.5;
@@ -897,11 +897,6 @@ iframe{
         color:#1E73BE; 
         font-size: 1.5rem; 
         margin-top:0;
-    }
-
-
-      .valoraciones-medicas {
-        padding-top: 0rem;
     }
 
 
@@ -1045,7 +1040,7 @@ iframe{
 
       .horarios{
         width: 50rem;
-        margin-top:15rem;
+        margin-top:12rem;
        display: block;
        position: absolute;
        scale:0.5;
@@ -1054,6 +1049,7 @@ iframe{
       }
 
     .horarios2{
+        margin:2rem;
         height:2.5rem; 
         width:60%; 
         scale:1.5;
@@ -1069,9 +1065,7 @@ iframe{
         margin-top:-0.5rem;
     }
 
-      .valoraciones-medicas {
-        padding-top: 3rem;
-    }
+ 
 
    
     }
