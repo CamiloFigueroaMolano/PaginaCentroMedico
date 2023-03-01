@@ -57,6 +57,31 @@ nav a:hover{
     text-decoration: underline;
 }
 
+/* hover navbar */
+
+#volante:hover{
+    transform: rotate(180deg);
+    transition: 400ms;
+}
+
+#lupa:hover{
+    transform:scale(1.2);
+    transition: 400ms;
+}
+
+#maletin:hover{
+    transform:scale(1.2);
+    filter: opacity(0.5) ;
+    transition: 400ms;
+}
+
+#pistola:hover{
+    transform:rotate(-10deg) translateX(-1rem);
+    transition: 400ms;
+}
+
+/*FIN hover navbar */
+
 /*socialmedia*/
 .social-media-icons {
     position: fixed;
@@ -314,6 +339,52 @@ nav a:hover{
     background: #1E73BE;
 }
 
+/* ----información servicios ------ */
+
+.contenedor-info-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: end;
+    justify-items: end;
+    margin-top: 10em;
+    gap: 10px;
+    grid-template-areas: "informacion-logo1 informacion-logo2";
+}
+
+.servicios-logo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: informacion-logo1;
+    margin: 0.5em;
+}
+
+.servicios-logo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    grid-area: informacion-logo2;
+    margin: 0.5em;
+}
+
+.servicios-logo1 > h2,
+.servicios-logo2 > h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #1E73BE;
+}
+
+.servicios-logo1 > p,
+.servicios-logo2 > p {
+    font-size: 18px;
+    color: #777E84;
+    margin: 2em;
+    text-align: center;
+    margin-right: 2em;
+    line-height: 1.5;
+}
+
 /* ----horarios----- */
 
 .contenedor-horarios {
@@ -434,7 +505,8 @@ nav a:hover{
     justify-content: center;
     background: rgba(0, 0, 0, 0.4);
     opacity: 0;
-    transition: 0.5s;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
     line-height: 1.5;
     font-size: 11pt;
 }
@@ -448,76 +520,97 @@ nav a:hover{
     opacity: 1;
 }
 
-/* ----información servicios ------ */
+/*infocards*/
 
-.contenedor-info-servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: end;
-    justify-items: end;
-    margin-top: 10em;
-    gap: 10px;
-    grid-template-areas: "informacion-logo1 informacion-logo2";
+.fondo{
+    margin-top: 5rem;
+    background: #ECE5E5;
+    padding-top: 4rem;
+}
+.container-lg{
+    padding-bottom: 3rem;
+}
+.container-sm{
+    justify-content: center;
 }
 
-.servicios-logo1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: informacion-logo1;
-    margin: 0.5em;
-}
-
-.servicios-logo2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    grid-area: informacion-logo2;
-    margin: 0.5em;
-}
-
-.servicios-logo1 > h2,
-.servicios-logo2 > h2 {
-    font-weight: 600;
-    font-size: 32px;
-    color: #1E73BE;
-}
-
-.servicios-logo1 > p,
-.servicios-logo2 > p {
-    font-size: 18px;
-    color: #777E84;
-    margin: 2em;
+.titulo{
     text-align: center;
-    margin-right: 2em;
-    line-height: 1.5;
+    height: 3rem;
+    color:#1E73BE;
 }
 
-/* hover navbar */
-
-#volante:hover{
-    transform: rotate(180deg);
-    transition: 400ms;
+.linea{
+    background: #65C22C;
+    width: 18%;
+    margin-left: 41%;
+    align-items: center;
+    height: 0.3rem;
+    margin-bottom: 2rem;
+    margin-top: -0.8rem;
+    align-items: center;
 }
 
-#lupa:hover{
-    transform:scale(1.2);
-    transition: 400ms;
+.card{
+    /* width: 100%; */
+    border:none;
+    background: none;
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-top:2rem;
+    /* width: 25rem; */
 }
 
-#maletin:hover{
-    transform:scale(1.2);
-    filter: opacity(0.5) ;
-    transition: 400ms;
+ .imgc{
+    /* border-radius: 2rem; */
+    align-items: center;
 }
 
-#pistola:hover{
-    transform:rotate(-10deg) translateX(-1rem);
-    transition: 400ms;
+/*infocards1*/
+
+
+/* seccion nosotros */
+
+.contenedor-nosotros {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
-/*FIN hover navbar */
+.tarjeta-nosotros {
+    width: 25rem;
+    border-radius: 25px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tarjeta-nosotros img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+ /* mirar que pasa ojo! */
+.tarjeta-nosotros .card-text {
+    width: 0;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+}
+
+.tarjeta-nosotros:hover .card-text {
+    width: 100%;
+}
 
 
 /* CSS imagenes valoraciones */
@@ -713,56 +806,6 @@ margin-top: 5rem;
     cursor: pointer;
   }
 /*FIN MODAL FORMULARIO*/  
-
-/*infocards*/
-
-.fondo{
-    margin-top: 5rem;
-    background: #ECE5E5;
-    padding-top: 4rem;
-}
-.container-lg{
-    
-    padding-bottom: 3rem;
-}
-.container-sm{
-    justify-content: center;
-}
-
-.titulo{
-    text-align: center;
-   
-    height: 3rem;
-    color:#1E73BE;
-}
-
-.linea{
-    background: #65C22C;
-    width: 18%;
-    margin-left: 41%;
-    align-items: center;
-    height: 0.3rem;
-    margin-bottom: 2rem;
-    margin-top: -0.8rem;
-    align-items: center;
-}
-
-.card{
-    width: 100%;
-    border:none;
-    background: none;
-    font-size: 0.7rem;
-    text-align: justify;
-    padding-top:2rem;
-    width: 25rem;
-}
-
- .imgc{
-    border-radius: 2rem;
-    align-items: center;
-}
-
-/*infocards1*/
 
 /*maps*/
 .cuadro_contacto{
