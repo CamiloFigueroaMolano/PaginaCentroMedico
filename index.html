@@ -18,7 +18,7 @@
 <body>
   <header>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top w-100">
 
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img class="imglogo" id='logo' src="img/LOGOS EXAMENES/logo.png"></a>
@@ -57,7 +57,7 @@
     </a>
   </div>
 
-  <section class="carrusel">
+  <section class="carrusel w-100">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -91,45 +91,67 @@
 
   <!-- seccion nuestros servicios -->
 
-  <div class="lineas-verdes-deco">
-    <div class="linea-verde-encima1"></div>
-    <div class="linea-verde-encima2"></div>
-  </div>
+  <section class="nuestros-servicioss">
+    <div class="lineas-verdes-deco">
+      <div class="linea-verde-encima1"></div>
+      <div class="linea-verde-encima2"></div>
+    </div>
+  
+    <div class="card1-section row justify-content-center align-items-center col col-12 w-100">
+      <div class="square1 col-2">
+        <h2>Nuestros<br><span>servicios</span></h2>
+      </div>
+      <div class="titulo2-nuestros align-items-center" id="titulo2-nuestros">
+        <h2>Nuestros<br><span>servicios</span></h2>
+      </div>
+      <section class="cardss conduccion card col">
+        <div class="card-title1" style="text-align: center;" id="licencia">
+          <h3>Examen para licencia de conducción</h3>
+        </div>
+        <div class="card-content">Evaluación y certificación de la actitud física, mental y coordinación motriz para
+          refrendar, recategorizar y sacar por primera vez la licencia de conducción, exigida por el Ministerio de
+          Transporte. Resolución 217 de 2014.</div>
+      </section>
+      <section class="cardss card col">
+        <div class="card-title1" style="text-align: center;" id="armas">
+          <h3>Porte y/o tenencia de armas de fuego</h3>
+        </div>
+        <div class="card-content">Evaluación y certificación de la actitud psicofísica para el porte y/o tenencia de armas
+          de fuego, para renovación de salvoconducto y seguridad privada, exigida por el Ministerio de Defensa Nacional.
+          Resolución 2984 de 2007.</div>
+      </section>
+      <section class="cardss card col">
+        <div class="card-title1" id="examenes">
+          <h3>Exámenes individuales</h3>
+        </div>
+        <div class="card-content">
+          <p>Ofrecemos servicios especializados de valoraciones individuales para las personas que requieren realizar una
+            valoración médica, valoración psicológica, valoración de fonoaudiología y visiometrias. Así prevenir y
+            detectar cualquier anomalía en su salud.</p>
+        </div>
+      </section>
+      <div class="square2"></div>
+    </div>
+  </section>
 
-  <div class="card1-section row justify-content-center align-items-center col col-12 w-100">
-    <div class="square1 col-2">
-      <h2>Nuestros<br><span>servicios</span></h2>
-    </div>
-    <div class="titulo2-nuestros align-items-center" id="titulo2-nuestros">
-      <h2>Nuestros<br><span>servicios</span></h2>
-    </div>
-    <section class="cardss conduccion card col">
-      <div class="card-title1" style="text-align: center;" id="licencia">
-        <h3>Examen para licencia de conducción</h3>
-      </div>
-      <div class="card-content">Evaluación y certificación de la actitud física, mental y coordinación motriz para
-        refrendar, recategorizar y sacar por primera vez la licencia de conducción, exigida por el Ministerio de
-        Transporte. Resolución 217 de 2014.</div>
+  <!--Civil y seguridad privada-->
+
+  <div class="contenedor-info-servicios w-100">
+
+    <section class="servicios-logo1">
+      <img src="./img/LOGOS EXAMENES/logo-civil.png" alt="logo-civil">
+      <h2>Civil</h2>
+      <p>Evaluación y certificación de la actitud psicofísica para el porte y/o tenencia de armas de fuego, para la
+        renovación del salvoconducto, exigida por el Ministerio de Defensa Nacional. Resolución 2984 de 2007.</p>
     </section>
-    <section class="cardss card col">
-      <div class="card-title1" style="text-align: center;" id="armas">
-        <h3>Porte y/o tenencia de armas de fuego</h3>
-      </div>
-      <div class="card-content">Evaluación y certificación de la actitud psicofísica para el porte y/o tenencia de armas
-        de fuego, para renovación de salvoconducto y seguridad privada, exigida por el Ministerio de Defensa Nacional.
-        Resolución 2984 de 2007.</div>
+
+    <section class="servicios-logo2">
+      <img src="./img/LOGOS EXAMENES/logo-seguridad-privada.png" alt="logo-seguridad-privada">
+      <h2>Seguridad Privada</h2>
+      <p>Realizamos evaluaciones de la aptitud psicofísica, mental y de coordinación motriz para el porte y/o tenencia
+        de armas de fuego para seguridad privada, para así certificar y dar cumplimiento a la ley 1539 de 2012, decreto
+        2368 del 22 de Noviembre de 2012.</p>
     </section>
-    <section class="cardss card col">
-      <div class="card-title1" id="examenes">
-        <h3>Exámenes individuales</h3>
-      </div>
-      <div class="card-content">
-        <p>Ofrecemos servicios especializados de valoraciones individuales para las personas que requieren realizar una
-          valoración médica, valoración psicológica, valoración de fonoaudiología y visiometrias. Así prevenir y
-          detectar cualquier anomalía en su salud.</p>
-      </div>
-    </section>
-    <div class="square2"></div>
   </div>
 
   <!-- seccion horarios -->
@@ -186,34 +208,27 @@
   <!-- seccion nosotros -->
 
   <div class="row fondo w-100">
-    <div class="container-lg container-sm col">
-      <div class="row justify-content-center w-100">
-        <div class="h1 titulo fw-bold justify-content-center p-1">NOSOTROS</div>
-        <div class="row">
-
-          <div class="line justify-content-center  mt-2">
-            <div class="linea"></div>
-          </div>
-
-        </div>
-        <div class="card px-5">
+    <div class="contenedor-todo-nosotros container-lg container-sm col">
+      <div class="h1 titulo fw-bold justify-content-center">NOSOTROS</div>
+      <div class="contenedor-nosotros row justify-content-center w-100">
+        <div class="tarjeta-nosotros card">
           <img src="./img/NOSOTROS/nosotros-01.png" class="card-img-top imgc imgleft" alt="Nosotros">
           <div class="card-body">
-            <p class="card-text fs-6">FISIOS es una IPS en Bogotá con profesionales y tecnología de última generación que
+            <p class="card-text">FISIOS es una IPS en Bogotá con profesionales y tecnología de última generación que
               ofrece servicios especializados de evaluación psicosensométrica. También es requisito para obtener
               licencias de conducción, porte y tenencia de armas de fuego y servicios de seguridad en el trabajo y
               seguridad vial.</p>
           </div>
         </div>
-        <div class="card card-md card-ms px-5">
+        <div class="tarjeta-nosotros card card-md card-ms">
           <img src="./img/NOSOTROS/nosotros-03.png" class="card-img-top imgc imgcenter" alt="Acreditaciones">
           <div class="card-body">
-            <p class="card-text fs-6">Fisios cuenta con la acreditación emitida por el Organismo Nacional de Acreditación de
+            <p class="card-text">Fisios cuenta con la acreditación emitida por el Organismo Nacional de Acreditación de
               Colombia (ONAC), el cual certifica el cumplimiento con los requisitos de la Norma NTC-ISO/IEC 17024:2012.
             </p>
           </div>
         </div>
-        <div class="card px-5">
+        <div class="tarjeta-nosotros card">
           <img src="./img/NOSOTROS/nosotros-02.png" class="card-img-top imgc imgright" alt="Habilitaciones">
           <div class="card-body">
             <p class="card-text">FISIOS cuenta con las siguientes habilitaciones:<br>
@@ -260,30 +275,8 @@
     </div>
   </div>
 
-  <div class="container-fluid w-100 py-1" style="height:2rem;"></div>
-
-<!--Civil y seguridad privada-->
-
-  <div class="contenedor-info-servicios">
-
-    <section class="servicios-logo1">
-      <img src="./img/LOGOS EXAMENES/logo-civil.png" alt="logo-civil">
-      <h2>Civil</h2>
-      <p>Evaluación y certificación de la actitud psicofísica para el porte y/o tenencia de armas de fuego, para la
-        renovación del salvoconducto, exigida por el Ministerio de Defensa Nacional. Resolución 2984 de 2007.</p>
-    </section>
-
-    <section class="servicios-logo2">
-      <img src="./img/LOGOS EXAMENES/logo-seguridad-privada.png" alt="logo-seguridad-privada">
-      <h2>Seguridad Privada</h2>
-      <p>Realizamos evaluaciones de la aptitud psicofísica, mental y de coordinación motriz para el porte y/o tenencia
-        de armas de fuego para seguridad privada, para así certificar y dar cumplimiento a la ley 1539 de 2012, decreto
-        2368 del 22 de Noviembre de 2012.</p>
-    </section>
-  </div>
-
   <!--Seccion de direccion y mapa-->
-  <section class=" row  py-5  justify-content-between">
+  <section class="info-mapa row justify-content-between w-100">
     <div class="row">
       <div class="cuadro_contacto col-md-4">
         <div class="infodecontacto p-5">
@@ -304,11 +297,10 @@
     </div>
   </section>
 
-  <div class="divisor w-100 b-solid" style="height:1rem;"></div>
 
   <!--Pie de pagina -->
 
-  <footer class="row col-12">
+  <footer class="footers row col-12">
     <div class="row col-12 foot1 pb-5">
       <div class="col-12">
         <img class="logo_fisios_foot" src="./img/LOGOS EXAMENES/logo.png" alt="Logo fisios Pie de pagina">
@@ -332,10 +324,10 @@
       </div>
     </div>
 
-    <div class="foot2">
+    <div class="foot2 w-100 my-4 py-2">
 
       <div class="card w-100">
-        <div class="card-body row col-sm-12">
+        <div class="card-body row col-sm-12 w-100">
           <img src="./img/logos/Logo-mintransporte.png"
             style="height: 100%; padding-left: 3%; padding-top: 2%; scale:1.1;" class="col-md-2 cols-sm-3">
           <div class="col-2 pt-5"></div>

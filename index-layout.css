@@ -21,8 +21,8 @@ nav{
     background: #1E73BE;
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    height: 6rem;
 }
 
 nav li{
@@ -56,6 +56,31 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+
+/* hover navbar */
+
+#volante:hover{
+    transform: rotate(180deg);
+    transition: 400ms;
+}
+
+#lupa:hover{
+    transform:scale(1.2);
+    transition: 400ms;
+}
+
+#maletin:hover{
+    transform:scale(1.2);
+    filter: opacity(0.5) ;
+    transition: 400ms;
+}
+
+#pistola:hover{
+    transform:rotate(-10deg) translateX(-1rem);
+    transition: 400ms;
+}
+
+/*FIN hover navbar */
 
 /*socialmedia*/
 .social-media-icons {
@@ -133,10 +158,14 @@ nav a:hover{
     background-size: 100% 100%;
   }
 
-/* tarjetas de informacion */
+/* tarjetas de informacion  nuestros servicios */
+
+.nuestros-servicioss {
+    margin: 25rem 0;
+    margin-bottom: 0;
+}
 
 .lineas-verdes-deco {
-    margin-top: 17rem;
     display: flex;
     justify-content: space-between; 
     position: relative;
@@ -298,7 +327,6 @@ nav a:hover{
     width: 30em;
     height: 25em;
     background: #1E73BE;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -314,12 +342,58 @@ nav a:hover{
     background: #1E73BE;
 }
 
+/* ----información servicios ------ */
+
+.contenedor-info-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: end;
+    justify-items: end;
+    margin-top: 12em;
+    gap: 10px;
+    grid-template-areas: "informacion-logo1 informacion-logo2";
+}
+
+.servicios-logo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: informacion-logo1;
+    margin: 0.5em;
+}
+
+.servicios-logo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    grid-area: informacion-logo2;
+    margin: 0.5em;
+}
+
+.servicios-logo1 > h2,
+.servicios-logo2 > h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #1E73BE;
+}
+
+.servicios-logo1 > p,
+.servicios-logo2 > p {
+    font-size: 18px;
+    color: #777E84;
+    margin: 2em;
+    text-align: center;
+    margin-right: 2em;
+    line-height: 1.5;
+}
+
 /* ----horarios----- */
 
 .contenedor-horarios {
     background-color: #ECE5E5;
     margin-left: 18%;
-    margin-top: 10rem;
+    margin-top: 12rem;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -392,7 +466,7 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 8rem 0;
+    margin-top:12rem
 }
 
 .valoraciones-medicas h2 {
@@ -400,7 +474,7 @@ nav a:hover{
     font-size: 30pt;
     font-weight: bold;
     border-bottom: 6px solid #8DD6FF;
-    margin-bottom: 4rem;
+    margin: 5rem 0;
     width: 30rem;
     text-align: center;
 }
@@ -409,7 +483,7 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #FFFFFF;
     gap: 1.5rem;
     flex-wrap: wrap;
@@ -418,7 +492,7 @@ nav a:hover{
 .tarjeta {
     width: 19rem;
     height: 22rem;
-    border-radius: 5px;
+    border-radius: 10px;
     background: var(--i);
     background-size: cover;
     box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
@@ -434,7 +508,8 @@ nav a:hover{
     justify-content: center;
     background: rgba(0, 0, 0, 0.4);
     opacity: 0;
-    transition: 0.5s;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
     line-height: 1.5;
     font-size: 11pt;
 }
@@ -448,76 +523,107 @@ nav a:hover{
     opacity: 1;
 }
 
-/* ----información servicios ------ */
+/*infocards*/
 
-.contenedor-info-servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: end;
-    justify-items: end;
-    margin-top: 10em;
-    gap: 10px;
-    grid-template-areas: "informacion-logo1 informacion-logo2";
+.fondo{
+    margin-top: 12rem;
+    background: #ECE5E5;
+    padding-top: 4rem;
+}
+.container-lg{
+    padding-bottom: 3rem;
+}
+.container-sm{
+    justify-content: center;
 }
 
-.servicios-logo1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: informacion-logo1;
-    margin: 0.5em;
-}
-
-.servicios-logo2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    grid-area: informacion-logo2;
-    margin: 0.5em;
-}
-
-.servicios-logo1 > h2,
-.servicios-logo2 > h2 {
-    font-weight: 600;
-    font-size: 32px;
-    color: #1E73BE;
-}
-
-.servicios-logo1 > p,
-.servicios-logo2 > p {
-    font-size: 18px;
-    color: #777E84;
-    margin: 2em;
+.titulo{
     text-align: center;
-    margin-right: 2em;
-    line-height: 1.5;
+    width: 15rem;
+    height: 3.5rem;
+    padding: 0;
+    margin: 0;
+    color:#1E73BE;
+    border-bottom: 6px solid #65C22C;
 }
 
-/* hover navbar */
 
-#volante:hover{
-    transform: rotate(180deg);
-    transition: 400ms;
+.card{
+    /* width: 100%; */
+    border:none;
+    background: none;
+    /* width: 25rem; */
 }
 
-#lupa:hover{
-    transform:scale(1.2);
-    transition: 400ms;
+.card-body {
+    padding: 0;
 }
 
-#maletin:hover{
-    transform:scale(1.2);
-    filter: opacity(0.5) ;
-    transition: 400ms;
+ .imgc{
+    /* border-radius: 2rem; */
+    align-items: center;
 }
 
-#pistola:hover{
-    transform:rotate(-10deg) translateX(-1rem);
-    transition: 400ms;
+/*infocards1*/
+
+
+/* seccion nosotros */
+
+.contenedor-todo-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
 }
 
-/*FIN hover navbar */
+.contenedor-nosotros {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tarjeta-nosotros {
+    width: 24rem;
+    height: 22rem;
+    border-radius: 50px;
+    margin: 0 2rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 11pt;
+    color: #FFFFFF;
+}
+
+.tarjeta-nosotros img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tarjeta-nosotros .card-body {
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+}
+
+.card-text {
+    padding: 0.8rem;
+}
+
+.tarjeta-nosotros:hover .card-body {
+    width: 100%;
+}
 
 
 /* CSS imagenes valoraciones */
@@ -605,7 +711,7 @@ nav a:hover{
 
 .contactanos {
 display: grid;
-margin-top: 5rem;
+margin-top: 12rem;
 }
 
 .cuadro-azul {
@@ -714,57 +820,12 @@ margin-top: 5rem;
   }
 /*FIN MODAL FORMULARIO*/  
 
-/*infocards*/
-
-.fondo{
-    margin-top: 5rem;
-    background: #ECE5E5;
-    padding-top: 4rem;
-}
-.container-lg{
-    
-    padding-bottom: 3rem;
-}
-.container-sm{
-    justify-content: center;
-}
-
-.titulo{
-    text-align: center;
-   
-    height: 3rem;
-    color:#1E73BE;
-}
-
-.linea{
-    background: #65C22C;
-    width: 18%;
-    margin-left: 41%;
-    align-items: center;
-    height: 0.3rem;
-    margin-bottom: 2rem;
-    margin-top: -0.8rem;
-    align-items: center;
-}
-
-.card{
-    width: 100%;
-    border:none;
-    background: none;
-    font-size: 0.7rem;
-    text-align: justify;
-    padding-top:2rem;
-    width: 25rem;
-}
-
- .imgc{
-    border-radius: 2rem;
-    align-items: center;
-}
-
-/*infocards1*/
-
 /*maps*/
+
+.info-mapa {
+    margin-top: 12rem;
+}
+
 .cuadro_contacto{
     
     background: #1E73BE;
@@ -776,9 +837,6 @@ margin-top: 5rem;
     font-size: larger;
     font-weight: 400;
     text-align: center;
-    
-    
-    
 }
 
 iframe{
@@ -790,6 +848,10 @@ iframe{
 /*fin maps*/
 
 /*footer CSS*/
+
+.footers {
+    margin-top: 12rem;
+}
 
 .foot1{
     text-align: center;
@@ -858,12 +920,12 @@ iframe{
 
     .horarios{
         margin-top:15rem;
-       display: block;
-       position: absolute;
-       scale:.8;
-      }
+        display: block;
+        position: absolute;
+        scale:.8;
+    }
 
-      .horarios2{
+    .horarios2{
         margin: 2rem;
         height:2.5rem; 
         width:60%; 
@@ -887,16 +949,18 @@ iframe{
         background: #1E73BE;
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100vw;
         height: auto;
     }
     .carousel-controls .btn{
         margin-top: -100px;
     }
 
-    .lineas-verdes-deco {
-        margin-top: 12rem;
-    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 30px; 
+        height: 40vh; 
+        /* background-size: 50% 50%; */
+      }
 
     #contenedor-botones{
         flex-direction: row;
@@ -924,11 +988,15 @@ iframe{
         padding-bottom: 109px;
     }
 
-    .lineas-verdes-deco {
-        margin-bottom: -4rem;
+    .nuestros-servicioss {
+        margin: 17rem 0;
     }
 
-        #titulo2-nuestros {
+    .lineas-verdes-deco {
+        margin-bottom: 0rem;
+    }
+
+    #titulo2-nuestros {
         display: block;
     }
 
@@ -1000,34 +1068,30 @@ iframe{
         margin: 0;
     }
 
-    #logocomp{
+    /* #logocomp{
         scale:1;
         
+    } */
+
+    .carousel-controls .btn{
+        margin-top: -84px;
     }
-    @media screen and (max-width: 768px) {
-        .carousel-controls .btn{
-            margin-top: -84px;
-        }
-        #logocomp{
-            scale:2;
-            
-        }
 
-        .contenedor-horarios{
-            padding-top: 5rem;
-            padding-bottom: 15rem;
-        }
+    .contenedor-horarios{
+        padding-top: 5rem;
+        padding-bottom: 15rem;
+    }
 
-      .horarios{
+    .horarios{
         width: 50rem;
         margin-top:12rem;
-       display: block;
-       position: absolute;
-       scale:0.5;
-       margin-left: 0;
-
-      }
-
+        display: block;
+        position: absolute;
+        scale:0.5;
+        margin-left: 0;
+    
+        }
+    
     .horarios2{
         margin:2rem;
         height:2.5rem; 
@@ -1043,11 +1107,6 @@ iframe{
         color:#1E73BE; 
         font-size: 1.5rem; 
         margin-top:-0.5rem;
-    }
-
- 
-
-   
     }
 }
 
