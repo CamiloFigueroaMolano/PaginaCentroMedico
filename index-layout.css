@@ -16,10 +16,6 @@ body{
       
 }
 
-.container{
-    align-items: center;
-   
-}
 
 /* CSS Navbar!*/   
 
@@ -984,7 +980,7 @@ iframe{
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     nav{
         background: #1E73BE;
         position: fixed;
@@ -994,6 +990,7 @@ iframe{
     }
     .carrusel{
         margin-top:75px;
+        width: 100%;
     }
     .carousel-controls .btn{
         margin-top: -100px;
@@ -1154,12 +1151,14 @@ iframe{
     @media screen and (max-width: 767px) {
         .carrusel{
             margin-top:28px;
-            width: 450px;
+            
         }   
     }
     @media screen and (max-width: 390px) {
         
-       
+       .carrusel{
+        width: 450px;
+       }
         .parrafocont{
         margin-right: 0;
         margin-left: 0;
