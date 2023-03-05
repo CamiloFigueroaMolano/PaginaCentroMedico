@@ -881,6 +881,7 @@ nav a:hover {
     font-size: larger;
     font-weight: 400;
     text-align: center;
+    text-decoration: none;
 }
 
 iframe {
@@ -1219,6 +1220,8 @@ iframe {
         margin-right: 0;
         margin-left: 0;
     }
+
+    
 
 
 }
