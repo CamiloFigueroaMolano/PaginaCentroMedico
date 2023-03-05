@@ -98,9 +98,10 @@ nav a:hover{
 .social-media-icons {
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 100;
+    scale: 1.4;
     
   }
   
@@ -116,6 +117,21 @@ nav a:hover{
     border-radius: 50%;
     padding-top: 4px;
   }
+
+  .Instagram:hover{
+    transform: scale(2);
+    transition: transform 0.3s ease;
+  }
+  
+  .Whatsapp:hover{
+    transform: scale(2);
+    transition: transform 0.3s ease;
+  }
+  
+  .Facebook:hover{
+    transform: scale(2);
+    transition: transform 0.3s ease;
+  } 
 
   
 /*carousel*/
@@ -156,10 +172,6 @@ nav a:hover{
     margin: 0.5rem;
   }
 
-  .carousel-controls .btn:not(:last-child) {
-    margin-right: 50px;
-  }
-
   .carousel-control-prev, .carousel-control-next {
     font-size: 0;
     line-height: 0;
@@ -170,7 +182,7 @@ nav a:hover{
   .carousel-control-prev-icon, .carousel-control-next-icon {
     display: inline-block;
     width: 50px; /* ajustar tamaño del icono */
-    height: 50px; /* ajustar tamaño del icono */
+    height: 0px; /* ajustar tamaño del icono */
     background-size: 100% 100%;
   }
 
