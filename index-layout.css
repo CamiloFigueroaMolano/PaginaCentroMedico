@@ -306,17 +306,17 @@ nav a:hover {
 }
 
 #licencia {
-    background-image: url('./img/foto/conduccion.png');
+    background-image: url('./img/foto/conduccion.webp');
     grid-area: licencia-conduccion;
 }
 
 #armas {
-    background-image: url('img/foto/porte.png');
+    background-image: url('img/foto/porte.webp');
     grid-area: porte-armas;
 }
 
 #examenes {
-    background-image: url('img/foto/individual.png');
+    background-image: url('img/foto/individual.webp');
     grid-area: examenes-individuales;
 }
 
