@@ -1224,6 +1224,7 @@ iframe {
     .cuadro_contacto {
         color: white;
         text-decoration: none;
+        user-select: none;
     }
 
     
