@@ -13,7 +13,7 @@ body{
     padding: 0;
     max-width: 2300px;
     margin: 0 auto;
-    margin-left: 30px;
+   
     
 }
 
@@ -37,7 +37,7 @@ nav{
 
 nav li{
     display: inline;
-    
+    margin: 0 0 0 5rem;
     font-weight: bold;
     
 }
@@ -1175,7 +1175,9 @@ iframe{
 
     @media screen and (max-width: 390px) {
         
-       
+       .body{
+        margin-left: 30px;
+       }
        .carrusel{
         width: 450px;
        }
