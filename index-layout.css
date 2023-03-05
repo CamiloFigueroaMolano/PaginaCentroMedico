@@ -13,11 +13,6 @@ body{
     padding: 0;
     max-width: 2300px;
     margin: 0 auto;
-    
-    
-    
-   
-    
 }
 
 /* CSS Navbar!*/   
@@ -1184,20 +1179,12 @@ iframe{
 
     @media screen and (max-width: 390px) {
         
-       .body{
-        margin: 0;
-        padding: 0;
-        max-width: 390px;
-        margin: 0 auto;
-        margin-right: 0px;
-       }
+       
 
-       nav{
-        max-width: 390px;
-    }
+      
 
        .carrusel{
-        width: 390px;
+        width: 407px;
        }
 
         .parrafocont{
