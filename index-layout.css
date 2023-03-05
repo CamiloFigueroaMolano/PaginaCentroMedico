@@ -306,7 +306,7 @@ nav a:hover {
 }
 
 #licencia {
-    background-image: url('img/foto/licencia.png');
+    background-image: url('./img/foto/conduccion.png');
     grid-area: licencia-conduccion;
 }
 
