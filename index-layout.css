@@ -15,6 +15,7 @@ body{
     margin: 0 auto;
     
     
+    
    
     
 }
@@ -141,7 +142,7 @@ nav a:hover{
   
 /*carousel*/
 .carrusel{
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 .carousel-item {
@@ -595,7 +596,7 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 0rem;
 }
 
 .contenedor-nosotros {
@@ -852,7 +853,7 @@ margin-top: 12rem;
     background: #1E73BE;
     width: 400px;
     height: auto;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 10%;
     color: white;
     font-size: larger;
@@ -872,6 +873,9 @@ iframe{
 
 .footers {
     margin-top: 12rem;
+    width: auto;
+   
+    
 }
 
 .foot1{
@@ -879,6 +883,7 @@ iframe{
     color:white;
     background: #1E73BE;
     padding-top: 50px;
+    width: 100%;
 }
 
 .logo_fisios_foot{
@@ -886,6 +891,7 @@ iframe{
     padding: 10px;
     padding-bottom: 10px;
     height: 2.5em;
+    
 }
 
 .foot1 a{
@@ -901,8 +907,8 @@ iframe{
     align-content: center;
     align-items: center;
     padding: 1rem;
-    margin-left: 1rem;
     margin-top: 4rem;
+    
 }
 
 
@@ -969,20 +975,21 @@ iframe{
     }
 
     .horarios2{
-        margin: 2rem;
+        margin: 0;
         height:2.5rem; 
-        width:60%; 
         scale:1.5;
     }
     
     .horarios2p{
+        position: relative;
         scale:1.5;
         margin-left:45%; 
         height:2.5rem; 
-        width:60%; 
         color:#1E73BE; 
         font-size: 1.5rem; 
         margin-top:0;
+        left: -90px;
+        
     }
 
 }
@@ -1180,10 +1187,14 @@ iframe{
        .body{
         margin: 0;
         padding: 0;
-        max-width: 2300px;
+        max-width: 390px;
         margin: 0 auto;
-        margin-left: 30px;
+        margin-right: 0px;
        }
+
+       nav{
+        max-width: 390px;
+    }
 
        .carrusel{
         width: 390px;
