@@ -844,6 +844,7 @@ nav a:hover {
 
 .info-mapa {
     margin-top: 12rem;
+    
 }
 
 .cuadro_contacto {
@@ -862,8 +863,8 @@ nav a:hover {
 
 iframe {
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 25em;
+    height: 25em;
 }
 
 /*fin maps*/
