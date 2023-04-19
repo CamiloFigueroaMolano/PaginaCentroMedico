@@ -38,9 +38,9 @@
           </div>
           <div class="modal-body">
             <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
-            <a href="#">
+            <a href="https://www.ccb.org.co/en/Circle-of-Affiliates/News/2023/Beneficios-por-renovar-tu-membresia-al-Circulo-de-Afiliados#accordeon-7046-item-7046" target="_blank">
               <img src="./img/ventana-modal-fisios-inicio.jpeg" alt="" class="w-100">
-            </a>
+            </a>            
           </div>
           <!-- <div class="modal-footer">
             <button type="button" class="btn btn-light" id="boton-ventana-modal">Click Aqui</button>
@@ -50,6 +50,14 @@
       </div>
     </div>
   </section>
+  <!--script para ventana emergente-->
+  <script>
+    var link = document.querySelector('a[target="_blank"]');
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      window.open(this.href, 'popup', 'width=600,height=400');
+    });
+  </script>
 
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top w-100">
