@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="../js/jquery-3.6.4.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" href="/img/LOGOS EXAMENES/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/img/LOGOS EXAMENES/favicon.png" type="image/png">
@@ -23,6 +25,31 @@
 </head>
 
 <body>
+
+  <!-- VENTANA ANUNCIO INICIAL -->
+  <section>  
+    <div class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" id="ventana-modal-inicio">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h4 class="modal-title">¡ATENCIÓN!</h4> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> -->
+            <a href="#">
+              <img src="imagen_para_modal_prueba.jpeg" alt="" class="w-100">
+            </a>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-light" id="boton-ventana-modal">Click Aqui</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <header>
 
     <!--NAVBAR-->
@@ -366,7 +393,11 @@
   </div>
 
   <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="../js/jqueryScript.js"></script>
+
+
 
   <!--SCRIPT MODAL FORM-->
   <script>
