@@ -16,13 +16,6 @@ body {
     margin: 0 auto;
 }
 
-/* CSS VENTANA MODAL INICIO */
-
-#boton-ventana-modal {
-    background: #65C22C;
-    color: #ECE5E5;
-}
-
 /* CSS Navbar!*/
 
 
@@ -851,7 +844,7 @@ nav a:hover {
 
 .info-mapa {
     margin-top: 12rem;
-    
+    margin-left: 3em;
 }
 
 .cuadro_contacto {
