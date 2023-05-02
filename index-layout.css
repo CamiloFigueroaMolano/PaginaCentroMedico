@@ -726,6 +726,34 @@ nav a:hover {
 /* FIN CSS imagenes valoraciones */
 
 
+/* Seccion Noticias estructura */
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+    background-color: #ECE5E5;
+}
+
+.noticias__title {
+    margin: 5rem;
+    width: 12rem;
+    color: #1E73BE;
+    font-weight: bold;
+    font-size: 30pt;
+    border-bottom: 6px solid #65C22C;
+}
+
+.noticias__imagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+
 /*Contactanos estructura*/
 
 .contactanos {
@@ -991,6 +1019,10 @@ iframe {
         margin-top: 0;
         left: -90px;
 
+    }
+
+    .noticias__imagenes {
+        flex-direction: column;
     }
 
 }
